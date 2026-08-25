@@ -1,0 +1,16 @@
+services:
+  lio:
+    image: buaadocker.xuhao1.me/fastlio2:arm64
+    container_name: lio
+    network_mode: "host"
+    volumes:
+      - /tmp/.X11-unix:/tmp/.X11-unix:rw
+      - $HOME/output:/output/
+      - ./entrypoint.sh:/entrypoint.sh
+      - $HOME/output/:/output/
+      - ./scripts:/root/lio_ws/src/FAST_LIO/scripts
+      - $HOME/data:/data/
+      - $HOME/Config/MID360_config.json:/root/lio_ws/src/livox_ros_driver2/config/MID360_config.json
+      - $HOME/Config/mid360.yaml:/root/lio_ws/src/FAST_LIO/config/mid360.yaml
+    command: launch
+    restart: unless-stopped

@@ -1,0 +1,244 @@
+#!/usr/bin/env python3
+"""
+Create the TF chain that Nav2 needs.
+
+Two inputs:
+  1. /ODOM (robot's native legged odometry) -> odom->base_link
+  2. Lightning-LM TF: map -> lidar_link (NDT map matching correction)
+
+Outputs:
+  - TF: map -> odom (correction from Lightning-LM's lidar_loc)
+  - TF: odom -> base_link (from /ODOM)
+  - /initialpose (TRANSIENT_LOCAL, when localization converges)
+"""
+
+import math
+import rclpy
+from rclpy.node import Node
+from rclpy.time import Time
+from rclpy.qos import QoSProfile, QoSDurabilityPolicy, QoSReliabilityPolicy
+from nav_msgs.msg import Odometry
+from geometry_msgs.msg import TransformStamped, PoseWithCovarianceStamped, Quaternion
+from tf2_ros import TransformBroadcaster, Buffer, TransformListener
+from tf2_ros import TransformException
+
+
+def quaternion_multiply(q1, q2):
+    x1, y1, z1, w1 = q1
+    x2, y2, z2, w2 = q2
+    return [
+        w1 * x2 + x1 * w2 + y1 * z2 - z1 * y2,
+        w1 * y2 - x1 * z2 + y1 * w2 + z1 * x2,
+        w1 * z2 + x1 * y2 - y1 * x2 + z1 * w2,
+        w1 * w2 - x1 * x2 - y1 * y2 - z1 * z2,
+    ]
+
+
+def quaternion_inverse(q):
+    x, y, z, w = q
+    norm = x * x + y * y + z * z + w * w
+    return [-x / norm, -y / norm, -z / norm, w / norm]
+
+
+def rotate_vector_by_quaternion(v, q):
+    qv = [v[0], v[1], v[2], 0.0]
+    q_inv = quaternion_inverse(q)
+    result = quaternion_multiply(quaternion_multiply(q, qv), q_inv)
+    return [result[0], result[1], result[2]]
+
+
+class LightningTFBridge(Node):
+    def __init__(self):
+        super().__init__('lightning_tf_bridge')
+
+        self.tf_buffer = Buffer()
+        self.tf_listener = TransformListener(self.tf_buffer, self)
+
+        # Subscribe to robot's native legged odometry
+        self.odom_sub = self.create_subscription(
+            Odometry, '/ODOM', self.odom_cb, 10)
+
+        self.tf_broadcaster = TransformBroadcaster(self)
+
+        transient_local_qos = QoSProfile(
+            depth=1,
+            durability=QoSDurabilityPolicy.TRANSIENT_LOCAL,
+            reliability=QoSReliabilityPolicy.RELIABLE,
+        )
+        self.initial_pose_pub = self.create_publisher(
+            PoseWithCovarianceStamped, '/initialpose', transient_local_qos)
+
+        self.initial_pose_sent = False
+        self.msg_count = 0
+        self.pose_buffer = []
+        self.pose_buffer_max = 10
+        self.convergence_threshold = 0.05
+        self.last_lio_pose = None
+        self.last_lio_quat = None
+        self.tf_lookup_fail_count = 0
+
+        self.create_timer(2.0, self.try_publish_initial_pose)
+
+        self.get_logger().info(
+            'LightningTFBridge started: '
+            '/ODOM -> TF odom->base_link, '
+            'listening to TF for map->odom correction from lightning-lm')
+
+    def try_publish_initial_pose(self):
+        if self.initial_pose_sent:
+            return
+        if self.msg_count < 10:
+            return
+        if self.last_lio_pose is None:
+            return
+
+        try:
+            tf = self.tf_buffer.lookup_transform(
+                'map', 'lidar_link', rclpy.time.Time())
+        except TransformException:
+            self.tf_lookup_fail_count += 1
+            if self.tf_lookup_fail_count <= 3:
+                self.get_logger().warn(
+                    'Waiting for Lightning-LM TF map->lidar_link...')
+            return
+
+        self.tf_lookup_fail_count = 0
+        px = tf.transform.translation.x
+        py = tf.transform.translation.y
+        pz = tf.transform.translation.z
+        dist = math.sqrt(px * px + py * py + pz * pz)
+
+        if dist < 0.05:
+            return
+
+        lio_px, lio_py, lio_pz = self.last_lio_pose
+        avg_x = sum(p[0] for p in self.pose_buffer[-10:]) / min(len(self.pose_buffer), 10)
+        avg_y = sum(p[1] for p in self.pose_buffer[-10:]) / min(len(self.pose_buffer), 10)
+        avg_z = sum(p[2] for p in self.pose_buffer[-10:]) / min(len(self.pose_buffer), 10)
+        max_dx = max(abs(p[0] - avg_x) for p in self.pose_buffer[-10:])
+        max_dy = max(abs(p[1] - avg_y) for p in self.pose_buffer[-10:])
+        max_dz = max(abs(p[2] - avg_z) for p in self.pose_buffer[-10:])
+
+        if max_dx < self.convergence_threshold and max_dy < self.convergence_threshold and max_dz < self.convergence_threshold:
+            self.initial_pose_sent = True
+            init_msg = PoseWithCovarianceStamped()
+            init_msg.header.stamp = self.get_clock().now().to_msg()
+            init_msg.header.frame_id = 'map'
+            init_msg.pose.pose.position.x = px
+            init_msg.pose.pose.position.y = py
+            init_msg.pose.pose.position.z = pz
+            init_msg.pose.pose.orientation = tf.transform.rotation
+            init_msg.pose.covariance = [
+                0.25, 0.0, 0.0, 0.0, 0.0, 0.0,
+                0.0, 0.25, 0.0, 0.0, 0.0, 0.0,
+                0.0, 0.0, 0.0, 0.0, 0.0, 0.0,
+                0.0, 0.0, 0.0, 0.0, 0.0, 0.0,
+                0.0, 0.0, 0.0, 0.0, 0.0, 0.0,
+                0.0, 0.0, 0.0, 0.0, 0.0, 0.0685,
+            ]
+            self.initial_pose_pub.publish(init_msg)
+            self.get_logger().info(
+                f'Published /initialpose (TRANSIENT_LOCAL): '
+                f'corrected=({px:.2f}, {py:.2f}, {pz:.2f}), '
+                f'odom=({lio_px:.2f}, {lio_py:.2f}, {lio_pz:.2f})')
+
+    def odom_cb(self, msg):
+        # /ODOM provides the robot's native legged odometry
+        px = msg.pose.pose.position.x
+        py = msg.pose.pose.position.y
+        pz = msg.pose.pose.position.z
+        qx = msg.pose.pose.orientation.x
+        qy = msg.pose.pose.orientation.y
+        qz = msg.pose.pose.orientation.z
+        qw = msg.pose.pose.orientation.w
+        dist = math.sqrt(px * px + py * py + pz * pz)
+
+        self.last_lio_pose = (px, py, pz)
+        self.last_lio_quat = (qx, qy, qz, qw)
+
+        now = self.get_clock().now().to_msg()
+
+        # Publish odom -> base_link from /ODOM (native legged odometry)
+        t = TransformStamped()
+        t.header.stamp = now
+        t.header.frame_id = 'odom'
+        t.child_frame_id = 'base_link'
+        t.transform.translation.x = px
+        t.transform.translation.y = py
+        t.transform.translation.z = pz
+        t.transform.rotation = msg.pose.pose.orientation
+        self.tf_broadcaster.sendTransform(t)
+
+        # Compute map -> odom from lightning-lm's corrected pose (map -> lidar_link)
+        map_to_odom = TransformStamped()
+        map_to_odom.header.stamp = now
+        map_to_odom.header.frame_id = 'map'
+        map_to_odom.child_frame_id = 'odom'
+
+        try:
+            if self.tf_buffer.can_transform('map', 'lidar_link', rclpy.time.Time()):
+                tf_corrected = self.tf_buffer.lookup_transform(
+                    'map', 'lidar_link', rclpy.time.Time())
+                cx = tf_corrected.transform.translation.x
+                cy = tf_corrected.transform.translation.y
+                cz = tf_corrected.transform.translation.z
+                crx = tf_corrected.transform.rotation.x
+                cry = tf_corrected.transform.rotation.y
+                crz = tf_corrected.transform.rotation.z
+                crw = tf_corrected.transform.rotation.w
+
+                lio_q_inv = quaternion_inverse(self.last_lio_quat)
+                trans_diff = [cx - px, cy - py, cz - pz]
+                trans_corrected = rotate_vector_by_quaternion(trans_diff, lio_q_inv)
+
+                map_to_odom.transform.translation.x = trans_corrected[0]
+                map_to_odom.transform.translation.y = trans_corrected[1]
+                map_to_odom.transform.translation.z = trans_corrected[2]
+
+                correction_q = quaternion_multiply(
+                    [crx, cry, crz, crw], lio_q_inv)
+                map_to_odom.transform.rotation.x = correction_q[0]
+                map_to_odom.transform.rotation.y = correction_q[1]
+                map_to_odom.transform.rotation.z = correction_q[2]
+                map_to_odom.transform.rotation.w = correction_q[3]
+        except TransformException:
+            map_to_odom.transform.translation.x = 0.0
+            map_to_odom.transform.translation.y = 0.0
+            map_to_odom.transform.translation.z = 0.0
+            map_to_odom.transform.rotation.w = 1.0
+
+        self.tf_broadcaster.sendTransform(map_to_odom)
+
+        self.msg_count += 1
+
+        if self.msg_count == 1:
+            self.get_logger().info(
+                f'First /ODOM received: '
+                f'pos=({px:.2f}, {py:.2f}, {pz:.2f}), dist_to_origin={dist:.2f}m')
+
+        if not self.initial_pose_sent:
+            self.pose_buffer.append((px, py, pz))
+            if len(self.pose_buffer) > self.pose_buffer_max:
+                self.pose_buffer.pop(0)
+
+        if self.msg_count % 200 == 0:
+            self.get_logger().info(
+                f'/ODOM pose: ({px:.2f}, {py:.2f}, {pz:.2f}), '
+                f'dist={dist:.2f}m',
+                throttle_duration_sec=5.0)
+
+
+def main():
+    rclpy.init()
+    node = LightningTFBridge()
+    try:
+        rclpy.spin(node)
+    except KeyboardInterrupt:
+        pass
+    finally:
+        node.destroy_node()
+        rclpy.shutdown()
+
+
+if __name__ == '__main__':
+    main()

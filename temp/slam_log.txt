@@ -1,0 +1,1115 @@
+I20260603 20:43:51.135064   185 laser_mapping.cc:14] init laser mapping from src/lightning-lm/config/default_deep_roboticsslam.yaml
+I20260603 20:43:51.136596   185 laser_mapping.cc:82] lidar_type 4
+I20260603 20:43:51.136617   185 laser_mapping.cc:94] Using RoboSense Lidar
+I20260603 20:43:51.137620   185 slam.cc:49] SlamSystem Options: 
+  online_mode: 1
+  with_cc: 1
+  with_gridmap: 0
+  with_loop_closing: 1
+  with_visualization: 0
+  with_2dvisualization: 0
+  pub_odom: 1
+  pub_tf: 1
+  enable_lidar_rviz: 0
+  enable_path_rviz: 1
+  step_on_kf: 0
+  log_pose_opt: 0
+  use_imu_init: 0
+I20260603 20:43:51.137647   185 slam.cc:78] map name: m20_real_map
+I20260603 20:43:51.137651   185 slam.cc:82] slam with loop closing
+I20260603 20:43:51.138655   185 loop_closing.cc:57] loop closing module is running in online mode
+I20260603 20:43:51.138746   185 slam.cc:125] online mode, creating ros2 node ... 
+I20260603 20:43:52.570580   185 slam.cc:189] SavePath service has been created.
+I20260603 20:43:52.572338   185 laser_mapping.cc:382] get cloud at 1725172681.3, latest imu: 1725172681.9975
+[0;33mW20260603 20:43:52.577239   185 laser_mapping.cc:193] No point, skip this scan!
+[mI20260603 20:43:52.577900   185 slam.cc:436] publishing path pose: [0, 0, 0]
+I20260603 20:43:52.577996   185 timer.h:53] func <Proc Lidar> timer: 5.6658 ms
+I20260603 20:43:52.579371   185 laser_mapping.cc:382] get cloud at 1725172681.4, latest imu: 1725172682.0025
+[0;33mW20260603 20:43:52.583564   185 laser_mapping.cc:193] No point, skip this scan!
+[mI20260603 20:43:52.583652   185 slam.cc:436] publishing path pose: [0, 0, 0]
+I20260603 20:43:52.583679   185 timer.h:53] func <Proc Lidar> timer: 4.31051 ms
+I20260603 20:43:52.584122   185 laser_mapping.cc:382] get cloud at 1725172681.5, latest imu: 1725172682.0124
+[0;33mW20260603 20:43:52.587787   185 laser_mapping.cc:193] No point, skip this scan!
+[mI20260603 20:43:52.587867   185 slam.cc:436] publishing path pose: [0, 0, 0]
+I20260603 20:43:52.587888   185 timer.h:53] func <Proc Lidar> timer: 3.76871 ms
+I20260603 20:43:52.588326   185 laser_mapping.cc:382] get cloud at 1725172681.6, latest imu: 1725172682.0175
+[0;33mW20260603 20:43:52.591787   185 laser_mapping.cc:193] No point, skip this scan!
+[mI20260603 20:43:52.591867   185 slam.cc:436] publishing path pose: [0, 0, 0]
+I20260603 20:43:52.591892   185 timer.h:53] func <Proc Lidar> timer: 3.56659 ms
+I20260603 20:43:52.592317   185 laser_mapping.cc:382] get cloud at 1725172681.7, latest imu: 1725172682.0225
+[0;33mW20260603 20:43:52.595817   185 laser_mapping.cc:193] No point, skip this scan!
+[mI20260603 20:43:52.595897   185 slam.cc:436] publishing path pose: [0, 0, 0]
+I20260603 20:43:52.595920   185 timer.h:53] func <Proc Lidar> timer: 3.60386 ms
+I20260603 20:43:52.596338   185 laser_mapping.cc:382] get cloud at 1725172681.7999, latest imu: 1725172682.0275
+[0;33mW20260603 20:43:52.598901   185 laser_mapping.cc:193] No point, skip this scan!
+[mI20260603 20:43:52.598984   185 slam.cc:436] publishing path pose: [0, 0, 0]
+I20260603 20:43:52.599007   185 timer.h:53] func <Proc Lidar> timer: 2.66936 ms
+I20260603 20:43:52.599439   185 laser_mapping.cc:382] get cloud at 1725172681.9, latest imu: 1725172682.0325
+I20260603 20:43:52.602104   185 imu_processing.hpp:331] waiting for imu init ... 2
+[0;33mW20260603 20:43:52.602123   185 laser_mapping.cc:193] No point, skip this scan!
+[mI20260603 20:43:52.602187   185 slam.cc:436] publishing path pose: [0, 0, 0]
+I20260603 20:43:52.602211   185 timer.h:53] func <Proc Lidar> timer: 2.77252 ms
+I20260603 20:43:52.635489   185 laser_mapping.cc:382] get cloud at 1725172682, latest imu: 1725172682.1124
+I20260603 20:43:52.637017   185 imu_processing.hpp:329] imu init done, bg:  0.00109656 -0.00045247 0.000672043, ba: 0 0 0
+[0;33mW20260603 20:43:52.637079   185 laser_mapping.cc:193] No point, skip this scan!
+[mI20260603 20:43:52.637156   185 slam.cc:436] publishing path pose: [0, 0, 0]
+I20260603 20:43:52.637183   185 timer.h:53] func <Proc Lidar> timer: 1.70441 ms
+[0;31mE20260603 20:43:52.728669   185 laser_mapping.cc:377] lidar loop back, clear buffer
+[m[0;31mE20260603 20:43:52.728891   185 laser_mapping.cc:379] lidar loop back, dt: -3.88622e-05
+[m[0;33mW20260603 20:43:52.728916   185 laser_mapping.cc:185] sync package failed
+[mI20260603 20:43:52.728966   185 slam.cc:436] publishing path pose: [0, 0, 0]
+I20260603 20:43:52.729004   185 timer.h:53] func <Proc Lidar> timer: 0.34545 ms
+I20260603 20:43:52.817359   185 laser_mapping.cc:382] get cloud at 1725172682.2, latest imu: 1725172682.3124
+I20260603 20:43:52.822187   185 laser_mapping.cc:199] first scan pts: 9547
+I20260603 20:43:52.823417   185 slam.cc:436] publishing path pose: [5.87018e-05, -0.000123911, 0.000194621]
+I20260603 20:43:52.823462   185 timer.h:53] func <Proc Lidar> timer: 6.1131 ms
+I20260603 20:43:52.907420   185 laser_mapping.cc:382] get cloud at 1725172682.3, latest imu: 1725172682.4124
+I20260603 20:43:53.090287   185 laser_mapping.cc:288] delta norm: 0.00274328, 0.132254
+I20260603 20:43:53.091039   185 laser_mapping.cc:300] [ mapping ]: In num: 9532 down 4824 Map grid num: 473 effect num : 4756
+I20260603 20:43:53.091064   185 laser_mapping.cc:354] LIO: create kf 0, state: -0.000805911  -0.00268784 -0.000534183, kf opt pose: -0.000805911  -0.00268784 -0.000534183, lio pose: -0.000805911  -0.00268784 -0.000534183
+I20260603 20:43:53.165827   185 timer.h:53] func <Proc Lidar> timer: 258.408 ms
+I20260603 20:43:53.165864   187 loop_closing.cc:84] lc: get kf 0 candi: 0
+I20260603 20:43:53.166356   187 loop_closing.cc:336] loop outliers: 0/0
+I20260603 20:43:53.166371   187 loop_closing.cc:349] optimize finished, loops: 0
+I20260603 20:43:53.166409   185 laser_mapping.cc:382] get cloud at 1725172682.4, latest imu: 1725172682.6574
+I20260603 20:43:53.403344   185 laser_mapping.cc:288] delta norm: 0.00480291, 0.10982
+I20260603 20:43:53.403947   185 laser_mapping.cc:300] [ mapping ]: In num: 9595 down 4761 Map grid num: 482 effect num : 4721
+I20260603 20:43:53.489419   185 timer.h:53] func <Proc Lidar> timer: 323.006 ms
+I20260603 20:43:53.489987   185 laser_mapping.cc:382] get cloud at 1725172682.5, latest imu: 1725172683.0175
+I20260603 20:43:53.609589   185 laser_mapping.cc:288] delta norm: 0.000951902, 0.020437
+I20260603 20:43:53.610116   185 laser_mapping.cc:300] [ mapping ]: In num: 9595 down 4761 Map grid num: 483 effect num : 4714
+I20260603 20:43:53.695757   185 timer.h:53] func <Proc Lidar> timer: 205.766 ms
+I20260603 20:43:53.696336   185 laser_mapping.cc:382] get cloud at 1725172682.6, latest imu: 1725172683.2474
+[0;31mE20260603 20:43:53.699000   185 imu_processing.hpp:223] get abnormal dt: 0.157472
+[mI20260603 20:43:53.949436   185 laser_mapping.cc:288] delta norm: 0.00389551, 0.0568077
+I20260603 20:43:53.949976   185 laser_mapping.cc:300] [ mapping ]: In num: 9572 down 4727 Map grid num: 486 effect num : 4678
+I20260603 20:43:54.034672   185 timer.h:53] func <Proc Lidar> timer: 338.331 ms
+I20260603 20:43:54.035185   185 laser_mapping.cc:382] get cloud at 1725172682.7, latest imu: 1725172683.6224
+I20260603 20:43:54.243921   185 laser_mapping.cc:288] delta norm: 0.000772223, 0.0177415
+I20260603 20:43:54.244437   185 laser_mapping.cc:300] [ mapping ]: In num: 9572 down 4727 Map grid num: 486 effect num : 4685
+I20260603 20:43:54.329174   185 timer.h:53] func <Proc Lidar> timer: 293.982 ms
+I20260603 20:43:54.329691   185 laser_mapping.cc:382] get cloud at 1725172682.9, latest imu: 1725172683.9524
+I20260603 20:43:54.516005   185 laser_mapping.cc:288] delta norm: 0.000612717, 0.00745405
+I20260603 20:43:54.516527   185 laser_mapping.cc:300] [ mapping ]: In num: 9572 down 4727 Map grid num: 486 effect num : 4693
+I20260603 20:43:54.600116   185 timer.h:53] func <Proc Lidar> timer: 270.42 ms
+I20260603 20:43:54.600703   185 laser_mapping.cc:382] get cloud at 1725172683.2, latest imu: 1725172684.2524
+[0;31mE20260603 20:43:54.603399   185 imu_processing.hpp:223] get abnormal dt: 0.317499
+[mI20260603 20:43:54.815112   185 laser_mapping.cc:288] delta norm: 0.00268711, 0.0319126
+I20260603 20:43:54.815654   185 laser_mapping.cc:300] [ mapping ]: In num: 9591 down 4808 Map grid num: 487 effect num : 4771
+I20260603 20:43:54.902807   185 timer.h:53] func <Proc Lidar> timer: 302.1 ms
+I20260603 20:43:54.903347   185 laser_mapping.cc:382] get cloud at 1725172683.6, latest imu: 1725172684.5874
+[0;31mE20260603 20:43:54.907122   185 imu_processing.hpp:223] get abnormal dt: 0.322477
+[mI20260603 20:43:55.132441   185 laser_mapping.cc:288] delta norm: 0.00183829, 0.0940037
+I20260603 20:43:55.132977   185 laser_mapping.cc:300] [ mapping ]: In num: 9537 down 4691 Map grid num: 490 effect num : 4643
+I20260603 20:43:55.215390   185 timer.h:53] func <Proc Lidar> timer: 312.039 ms
+I20260603 20:43:55.217012   185 laser_mapping.cc:382] get cloud at 1725172683.9, latest imu: 1725172684.9374
+[0;31mE20260603 20:43:55.221029   185 imu_processing.hpp:223] get abnormal dt: 0.252435
+[mI20260603 20:43:55.450860   185 laser_mapping.cc:288] delta norm: 0.00172192, 0.0660337
+I20260603 20:43:55.451396   185 laser_mapping.cc:300] [ mapping ]: In num: 9547 down 4764 Map grid num: 495 effect num : 4704
+I20260603 20:43:55.536322   185 timer.h:53] func <Proc Lidar> timer: 319.313 ms
+I20260603 20:43:55.537344   185 laser_mapping.cc:382] get cloud at 1725172684.3, latest imu: 1725172685.2924
+[0;31mE20260603 20:43:55.541236   185 imu_processing.hpp:223] get abnormal dt: 0.252497
+[mI20260603 20:43:55.811590   185 laser_mapping.cc:288] delta norm: 0.00365255, 0.0651772
+I20260603 20:43:55.812135   185 laser_mapping.cc:300] [ mapping ]: In num: 9593 down 4709 Map grid num: 497 effect num : 4661
+I20260603 20:43:55.895282   185 timer.h:53] func <Proc Lidar> timer: 357.932 ms
+I20260603 20:43:55.895792   185 laser_mapping.cc:382] get cloud at 1725172684.7, latest imu: 1725172685.6924
+[0;31mE20260603 20:43:55.898530   185 imu_processing.hpp:223] get abnormal dt: 0.187426
+[mI20260603 20:43:56.101428   185 laser_mapping.cc:288] delta norm: 0.00373444, 0.0640575
+I20260603 20:43:56.101953   185 laser_mapping.cc:300] [ mapping ]: In num: 9561 down 4708 Map grid num: 499 effect num : 4654
+I20260603 20:43:56.185559   185 timer.h:53] func <Proc Lidar> timer: 289.757 ms
+I20260603 20:43:56.185904   185 laser_mapping.cc:382] get cloud at 1725172685, latest imu: 1725172686.0123
+[0;31mE20260603 20:43:56.187314   185 imu_processing.hpp:223] get abnormal dt: 0.137545
+[mI20260603 20:43:56.292325   185 laser_mapping.cc:288] delta norm: 0.00363785, 0.0897158
+I20260603 20:43:56.292725   185 laser_mapping.cc:300] [ mapping ]: In num: 5471 down 2996 Map grid num: 500 effect num : 2978
+I20260603 20:43:56.334326   185 timer.h:53] func <Proc Lidar> timer: 148.416 ms
+I20260603 20:43:56.334831   185 laser_mapping.cc:382] get cloud at 1725172685.2, latest imu: 1725172686.1723
+[0;31mE20260603 20:43:56.337600   185 imu_processing.hpp:223] get abnormal dt: 0.192404
+[mI20260603 20:43:56.650386   185 laser_mapping.cc:288] delta norm: 0.00380038, 0.0488328
+I20260603 20:43:56.650916   185 laser_mapping.cc:300] [ mapping ]: In num: 9516 down 4748 Map grid num: 501 effect num : 4700
+I20260603 20:43:56.729315   185 timer.h:53] func <Proc Lidar> timer: 394.479 ms
+I20260603 20:43:56.729851   185 laser_mapping.cc:382] get cloud at 1725172685.6, latest imu: 1725172686.6174
+[0;31mE20260603 20:43:56.732602   185 imu_processing.hpp:223] get abnormal dt: 0.392397
+[mI20260603 20:43:56.958252   185 laser_mapping.cc:288] delta norm: 0.00100761, 0.0451449
+I20260603 20:43:56.958768   185 laser_mapping.cc:300] [ mapping ]: In num: 9534 down 4703 Map grid num: 502 effect num : 4662
+I20260603 20:43:57.042320   185 timer.h:53] func <Proc Lidar> timer: 312.462 ms
+I20260603 20:43:57.042827   185 laser_mapping.cc:382] get cloud at 1725172685.9, latest imu: 1725172686.9673
+I20260603 20:43:57.339447   185 laser_mapping.cc:288] delta norm: 0.00134079, 0.01535
+I20260603 20:43:57.339958   185 laser_mapping.cc:300] [ mapping ]: In num: 9534 down 4703 Map grid num: 502 effect num : 4667
+I20260603 20:43:57.424286   185 timer.h:53] func <Proc Lidar> timer: 381.45 ms
+I20260603 20:43:57.424806   185 laser_mapping.cc:382] get cloud at 1725172686.4, latest imu: 1725172687.3873
+[0;31mE20260603 20:43:57.427525   185 imu_processing.hpp:223] get abnormal dt: 0.312372
+[mI20260603 20:43:57.719206   185 laser_mapping.cc:288] delta norm: 0.0238364, 0.0605774
+I20260603 20:43:57.719735   185 laser_mapping.cc:300] [ mapping ]: In num: 9557 down 4704 Map grid num: 503 effect num : 4662
+I20260603 20:43:57.802897   185 timer.h:53] func <Proc Lidar> timer: 378.083 ms
+I20260603 20:43:57.803422   185 laser_mapping.cc:382] get cloud at 1725172686.7999, latest imu: 1725172687.8123
+[0;31mE20260603 20:43:57.806028   185 imu_processing.hpp:223] get abnormal dt: 0.117419
+[mI20260603 20:43:57.907114   185 laser_mapping.cc:288] delta norm: 0.00365702, 0.119435
+I20260603 20:43:57.907611   185 laser_mapping.cc:300] [ mapping ]: In num: 8928 down 4380 Map grid num: 503 effect num : 4340
+I20260603 20:43:57.982491   185 timer.h:53] func <Proc Lidar> timer: 179.06 ms
+I20260603 20:43:57.982833   185 laser_mapping.cc:382] get cloud at 1725172687, latest imu: 1725172688.0073
+I20260603 20:43:58.060853   185 laser_mapping.cc:288] delta norm: 0.00527084, 0.0782449
+I20260603 20:43:58.061196   185 laser_mapping.cc:300] [ mapping ]: In num: 5479 down 3014 Map grid num: 503 effect num : 2988
+I20260603 20:43:58.100680   185 timer.h:53] func <Proc Lidar> timer: 117.843 ms
+[0;31mE20260603 20:43:58.101348   185 laser_mapping.cc:377] lidar loop back, clear buffer
+[m[0;31mE20260603 20:43:58.101387   185 laser_mapping.cc:379] lidar loop back, dt: -3.00407e-05
+[m[0;33mW20260603 20:43:58.101401   185 laser_mapping.cc:185] sync package failed
+[mI20260603 20:43:58.101433   185 timer.h:53] func <Proc Lidar> timer: 0.08715 ms
+I20260603 20:43:58.101891   185 laser_mapping.cc:382] get cloud at 1725172687.2, latest imu: 1725172688.1473
+I20260603 20:43:58.194394   185 laser_mapping.cc:288] delta norm: 0.00268302, 0.034382
+I20260603 20:43:58.194728   185 laser_mapping.cc:300] [ mapping ]: In num: 5479 down 3014 Map grid num: 503 effect num : 2984
+I20260603 20:43:58.229703   185 timer.h:53] func <Proc Lidar> timer: 127.805 ms
+I20260603 20:43:58.230229   185 laser_mapping.cc:382] get cloud at 1725172687.3, latest imu: 1725172688.2823
+[0;31mE20260603 20:43:58.232932   185 imu_processing.hpp:223] get abnormal dt: 0.287351
+[mI20260603 20:43:58.429585   185 laser_mapping.cc:288] delta norm: 0.00368987, 0.0589405
+I20260603 20:43:58.430114   185 laser_mapping.cc:300] [ mapping ]: In num: 9570 down 4714 Map grid num: 504 effect num : 4659
+I20260603 20:43:58.507356   185 timer.h:53] func <Proc Lidar> timer: 277.125 ms
+I20260603 20:43:58.507892   185 laser_mapping.cc:382] get cloud at 1725172687.6, latest imu: 1725172688.5923
+I20260603 20:43:58.713133   185 laser_mapping.cc:288] delta norm: 0.00107762, 0.00958469
+I20260603 20:43:58.713644   185 laser_mapping.cc:300] [ mapping ]: In num: 9570 down 4714 Map grid num: 504 effect num : 4664
+I20260603 20:43:58.797645   185 timer.h:53] func <Proc Lidar> timer: 289.748 ms
+I20260603 20:43:58.798177   185 laser_mapping.cc:382] get cloud at 1725172687.9, latest imu: 1725172688.9173
+[0;31mE20260603 20:43:58.800880   185 imu_processing.hpp:223] get abnormal dt: 0.412341
+[mI20260603 20:43:59.070722   185 laser_mapping.cc:288] delta norm: 0.0115106, 0.0456287
+I20260603 20:43:59.071250   185 laser_mapping.cc:300] [ mapping ]: In num: 9576 down 4725 Map grid num: 506 effect num : 4675
+I20260603 20:43:59.155916   185 timer.h:53] func <Proc Lidar> timer: 357.734 ms
+I20260603 20:43:59.156431   185 laser_mapping.cc:382] get cloud at 1725172688.3, latest imu: 1725172689.3123
+[0;31mE20260603 20:43:59.159188   185 imu_processing.hpp:223] get abnormal dt: 0.135
+[mI20260603 20:43:59.366204   185 laser_mapping.cc:288] delta norm: 0.00150467, 0.0339974
+I20260603 20:43:59.366752   185 laser_mapping.cc:300] [ mapping ]: In num: 9597 down 4752 Map grid num: 506 effect num : 4704
+I20260603 20:43:59.452662   185 timer.h:53] func <Proc Lidar> timer: 296.226 ms
+I20260603 20:43:59.453161   185 laser_mapping.cc:382] get cloud at 1725172688.6, latest imu: 1725172689.6422
+[0;31mE20260603 20:43:59.455854   185 imu_processing.hpp:223] get abnormal dt: 0.192307
+[mI20260603 20:43:59.657927   185 laser_mapping.cc:288] delta norm: 0.00336642, 0.0744282
+I20260603 20:43:59.658464   185 laser_mapping.cc:300] [ mapping ]: In num: 9555 down 4684 Map grid num: 507 effect num : 4636
+I20260603 20:43:59.741134   185 timer.h:53] func <Proc Lidar> timer: 287.969 ms
+I20260603 20:43:59.741647   185 laser_mapping.cc:382] get cloud at 1725172688.9, latest imu: 1725172689.9622
+[0;31mE20260603 20:43:59.744778   185 imu_processing.hpp:223] get abnormal dt: 0.217345
+[mI20260603 20:43:59.976260   185 laser_mapping.cc:288] delta norm: 0.00335077, 0.0567944
+I20260603 20:43:59.976783   185 laser_mapping.cc:300] [ mapping ]: In num: 9591 down 4766 Map grid num: 508 effect num : 4726
+I20260603 20:44:00.062748   185 timer.h:53] func <Proc Lidar> timer: 321.099 ms
+I20260603 20:44:00.063264   185 laser_mapping.cc:382] get cloud at 1725172689.3, latest imu: 1725172690.3222
+[0;31mE20260603 20:44:00.066001   185 imu_processing.hpp:223] get abnormal dt: 0.312353
+[mI20260603 20:44:00.320185   185 laser_mapping.cc:288] delta norm: 0.00464087, 0.0512522
+I20260603 20:44:00.320713   185 laser_mapping.cc:300] [ mapping ]: In num: 9584 down 4767 Map grid num: 508 effect num : 4719
+I20260603 20:44:00.405892   185 timer.h:53] func <Proc Lidar> timer: 342.622 ms
+I20260603 20:44:00.406411   185 laser_mapping.cc:382] get cloud at 1725172689.7, latest imu: 1725172690.7022
+[0;31mE20260603 20:44:00.409118   185 imu_processing.hpp:223] get abnormal dt: 0.242281
+[mI20260603 20:44:00.677342   185 laser_mapping.cc:288] delta norm: 0.00648606, 0.0473828
+I20260603 20:44:00.677881   185 laser_mapping.cc:300] [ mapping ]: In num: 9565 down 4689 Map grid num: 511 effect num : 4656
+I20260603 20:44:00.760701   185 timer.h:53] func <Proc Lidar> timer: 354.286 ms
+I20260603 20:44:00.761409   185 laser_mapping.cc:382] get cloud at 1725172690, latest imu: 1725172691.0972
+[0;31mE20260603 20:44:00.767767   185 imu_processing.hpp:223] get abnormal dt: 0.16238
+[mI20260603 20:44:01.021912   185 laser_mapping.cc:288] delta norm: 0.00288874, 0.0437809
+I20260603 20:44:01.022498   185 laser_mapping.cc:300] [ mapping ]: In num: 13009 down 5332 Map grid num: 512 effect num : 5281
+I20260603 20:44:01.126916   185 timer.h:53] func <Proc Lidar> timer: 365.502 ms
+I20260603 20:44:01.127439   185 laser_mapping.cc:382] get cloud at 1725172690.5, latest imu: 1725172691.5022
+[0;31mE20260603 20:44:01.130097   185 imu_processing.hpp:223] get abnormal dt: 0.122277
+[mI20260603 20:44:01.424547   185 laser_mapping.cc:288] delta norm: 0.00600692, 0.0351833
+I20260603 20:44:01.425074   185 laser_mapping.cc:300] [ mapping ]: In num: 9589 down 4713 Map grid num: 514 effect num : 4661
+I20260603 20:44:01.511672   185 timer.h:53] func <Proc Lidar> timer: 384.227 ms
+I20260603 20:44:01.512178   185 laser_mapping.cc:382] get cloud at 1725172690.9, latest imu: 1725172691.9322
+[0;31mE20260603 20:44:01.514854   185 imu_processing.hpp:223] get abnormal dt: 0.102241
+[mI20260603 20:44:01.783288   185 laser_mapping.cc:288] delta norm: 0.00514719, 0.0134185
+I20260603 20:44:01.783834   185 laser_mapping.cc:300] [ mapping ]: In num: 9553 down 4702 Map grid num: 514 effect num : 4650
+I20260603 20:44:01.866564   185 timer.h:53] func <Proc Lidar> timer: 354.381 ms
+I20260603 20:44:01.867082   185 laser_mapping.cc:382] get cloud at 1725172691.3, latest imu: 1725172692.3272
+I20260603 20:44:02.055773   185 laser_mapping.cc:288] delta norm: 0.00220291, 0.0459011
+I20260603 20:44:02.056324   185 laser_mapping.cc:300] [ mapping ]: In num: 9551 down 4787 Map grid num: 514 effect num : 4730
+I20260603 20:44:02.142722   185 timer.h:53] func <Proc Lidar> timer: 275.636 ms
+I20260603 20:44:02.143229   185 laser_mapping.cc:382] get cloud at 1725172691.6, latest imu: 1725172692.6322
+[0;31mE20260603 20:44:02.145884   185 imu_processing.hpp:223] get abnormal dt: 0.102224
+[mI20260603 20:44:02.367372   185 laser_mapping.cc:288] delta norm: 0.00678249, 0.0476238
+I20260603 20:44:02.367877   185 laser_mapping.cc:300] [ mapping ]: In num: 9534 down 4666 Map grid num: 514 effect num : 4613
+I20260603 20:44:02.451288   185 timer.h:53] func <Proc Lidar> timer: 308.052 ms
+I20260603 20:44:02.451629   185 laser_mapping.cc:382] get cloud at 1725172692, latest imu: 1725172692.9772
+[0;31mE20260603 20:44:02.453024   185 imu_processing.hpp:223] get abnormal dt: 0.232215
+[mI20260603 20:44:02.572359   185 laser_mapping.cc:288] delta norm: 0.00388859, 0.113348
+I20260603 20:44:02.572739   185 laser_mapping.cc:300] [ mapping ]: In num: 5455 down 2973 Map grid num: 514 effect num : 2934
+I20260603 20:44:02.612221   185 timer.h:53] func <Proc Lidar> timer: 160.587 ms
+[0;31mE20260603 20:44:02.612924   185 laser_mapping.cc:377] lidar loop back, clear buffer
+[m[0;31mE20260603 20:44:02.612955   185 laser_mapping.cc:379] lidar loop back, dt: -4.33922e-05
+[m[0;33mW20260603 20:44:02.612970   185 laser_mapping.cc:185] sync package failed
+[mI20260603 20:44:02.613004   185 timer.h:53] func <Proc Lidar> timer: 0.082163 ms
+I20260603 20:44:02.613265   185 laser_mapping.cc:382] get cloud at 1725172692.2, latest imu: 1725172693.1571
+I20260603 20:44:02.691190   185 laser_mapping.cc:288] delta norm: 0.00119394, 0.0174948
+I20260603 20:44:02.691560   185 laser_mapping.cc:300] [ mapping ]: In num: 5455 down 2973 Map grid num: 514 effect num : 2947
+I20260603 20:44:02.725818   185 timer.h:53] func <Proc Lidar> timer: 112.549 ms
+[0;31mE20260603 20:44:02.726524   185 laser_mapping.cc:377] lidar loop back, clear buffer
+[m[0;31mE20260603 20:44:02.726565   185 laser_mapping.cc:379] lidar loop back, dt: -4.02927e-05
+[m[0;33mW20260603 20:44:02.726580   185 laser_mapping.cc:185] sync package failed
+[mI20260603 20:44:02.726617   185 timer.h:53] func <Proc Lidar> timer: 0.094762 ms
+I20260603 20:44:02.726869   185 laser_mapping.cc:382] get cloud at 1725172692.4, latest imu: 1725172693.2871
+[0;31mE20260603 20:44:02.728330   185 imu_processing.hpp:223] get abnormal dt: 0.22721
+[mI20260603 20:44:02.826143   185 laser_mapping.cc:288] delta norm: 0.0105325, 0.0533185
+I20260603 20:44:02.826483   185 laser_mapping.cc:300] [ mapping ]: In num: 5480 down 2985 Map grid num: 515 effect num : 2957
+I20260603 20:44:02.860494   185 timer.h:53] func <Proc Lidar> timer: 133.618 ms
+I20260603 20:44:02.861212   185 laser_mapping.cc:382] get cloud at 1725172692.5, latest imu: 1725172693.4272
+[0;31mE20260603 20:44:02.866529   185 imu_processing.hpp:223] get abnormal dt: 0.13223
+[mI20260603 20:44:03.234257   185 laser_mapping.cc:288] delta norm: 0.00576017, 0.141517
+I20260603 20:44:03.234850   185 laser_mapping.cc:300] [ mapping ]: In num: 13617 down 5397 Map grid num: 516 effect num : 5341
+I20260603 20:44:03.335084   185 timer.h:53] func <Proc Lidar> timer: 473.869 ms
+I20260603 20:44:03.335759   185 laser_mapping.cc:382] get cloud at 1725172692.9, latest imu: 1725172693.9571
+[0;31mE20260603 20:44:03.340850   185 imu_processing.hpp:223] get abnormal dt: 0.277209
+[mI20260603 20:44:03.636648   185 laser_mapping.cc:288] delta norm: 0.00725245, 0.0447971
+I20260603 20:44:03.637246   185 laser_mapping.cc:300] [ mapping ]: In num: 13659 down 5408 Map grid num: 517 effect num : 5372
+I20260603 20:44:03.747435   185 timer.h:53] func <Proc Lidar> timer: 411.672 ms
+I20260603 20:44:03.748152   185 laser_mapping.cc:382] get cloud at 1725172693.4, latest imu: 1725172694.4171
+[0;31mE20260603 20:44:03.753324   185 imu_processing.hpp:223] get abnormal dt: 0.124994
+[mI20260603 20:44:04.241325   185 laser_mapping.cc:288] delta norm: 0.0121905, 0.10794
+I20260603 20:44:04.241909   185 laser_mapping.cc:300] [ mapping ]: In num: 13674 down 5348 Map grid num: 518 effect num : 5300
+I20260603 20:44:04.349692   185 timer.h:53] func <Proc Lidar> timer: 601.535 ms
+I20260603 20:44:04.350386   185 laser_mapping.cc:382] get cloud at 1725172694, latest imu: 1725172695.0821
+[0;31mE20260603 20:44:04.355994   185 imu_processing.hpp:223] get abnormal dt: 0.357192
+[m[0;31mE20260603 20:44:04.356745   185 laser_mapping.cc:233] 检测到雷达断流，时长：0.599996
+[mI20260603 20:44:04.723673   185 laser_mapping.cc:288] delta norm: 0.0112015, 0.0229103
+I20260603 20:44:04.724251   185 laser_mapping.cc:300] [ mapping ]: In num: 13024 down 5327 Map grid num: 519 effect num : 5260
+I20260603 20:44:04.829546   185 timer.h:53] func <Proc Lidar> timer: 479.155 ms
+I20260603 20:44:04.829897   185 laser_mapping.cc:382] get cloud at 1725172694.6, latest imu: 1725172695.6171
+[0;31mE20260603 20:44:04.831322   185 imu_processing.hpp:223] get abnormal dt: 0.217216
+[m[0;31mE20260603 20:44:04.831522   185 laser_mapping.cc:233] 检测到雷达断流，时长：0.599998
+[mI20260603 20:44:05.001118   185 laser_mapping.cc:288] delta norm: 0.0118634, 0.101705
+I20260603 20:44:05.001456   185 laser_mapping.cc:300] [ mapping ]: In num: 5485 down 2959 Map grid num: 519 effect num : 2929
+I20260603 20:44:05.043290   185 timer.h:53] func <Proc Lidar> timer: 213.387 ms
+I20260603 20:44:05.043615   185 laser_mapping.cc:382] get cloud at 1725172694.7999, latest imu: 1725172695.8571
+I20260603 20:44:05.093278   185 laser_mapping.cc:288] delta norm: 0.00104171, 0.0240962
+I20260603 20:44:05.093597   185 laser_mapping.cc:300] [ mapping ]: In num: 5485 down 2959 Map grid num: 519 effect num : 2926
+I20260603 20:44:05.126900   185 timer.h:53] func <Proc Lidar> timer: 83.276 ms
+I20260603 20:44:05.127619   185 laser_mapping.cc:382] get cloud at 1725172694.9, latest imu: 1725172695.9471
+[0;31mE20260603 20:44:05.131611   185 imu_processing.hpp:223] get abnormal dt: 0.382155
+[mI20260603 20:44:05.522893   185 laser_mapping.cc:288] delta norm: 0.00744611, 0.129579
+I20260603 20:44:05.523474   185 laser_mapping.cc:300] [ mapping ]: In num: 13631 down 5351 Map grid num: 519 effect num : 5296
+I20260603 20:44:05.623010   185 timer.h:53] func <Proc Lidar> timer: 495.382 ms
+I20260603 20:44:05.623708   185 laser_mapping.cc:382] get cloud at 1725172695.4, latest imu: 1725172696.4971
+I20260603 20:44:05.829538   185 laser_mapping.cc:288] delta norm: 0.000422604, 0.0114157
+I20260603 20:44:05.830108   185 laser_mapping.cc:300] [ mapping ]: In num: 13631 down 5351 Map grid num: 519 effect num : 5308
+I20260603 20:44:05.937453   185 timer.h:53] func <Proc Lidar> timer: 313.74 ms
+I20260603 20:44:05.937783   185 laser_mapping.cc:382] get cloud at 1725172695.7999, latest imu: 1725172696.8471
+[0;31mE20260603 20:44:05.939100   185 imu_processing.hpp:223] get abnormal dt: 0.517192
+[mI20260603 20:44:06.062237   185 laser_mapping.cc:288] delta norm: 0.00959717, 0.0317403
+I20260603 20:44:06.062548   185 laser_mapping.cc:300] [ mapping ]: In num: 4811 down 2693 Map grid num: 519 effect num : 2672
+I20260603 20:44:06.100271   185 timer.h:53] func <Proc Lidar> timer: 162.482 ms
+I20260603 20:44:06.100643   185 laser_mapping.cc:382] get cloud at 1725172696, latest imu: 1725172697.0271
+I20260603 20:44:06.217314   185 laser_mapping.cc:288] delta norm: 0.00544045, 0.0625292
+I20260603 20:44:06.217681   185 laser_mapping.cc:300] [ mapping ]: In num: 5474 down 2994 Map grid num: 519 effect num : 2971
+I20260603 20:44:06.252135   185 timer.h:53] func <Proc Lidar> timer: 151.483 ms
+I20260603 20:44:06.252480   185 laser_mapping.cc:382] get cloud at 1725172696.2, latest imu: 1725172697.197
+I20260603 20:44:06.330904   185 laser_mapping.cc:288] delta norm: 0.00134646, 0.0258181
+I20260603 20:44:06.331269   185 laser_mapping.cc:300] [ mapping ]: In num: 5474 down 2994 Map grid num: 519 effect num : 2971
+I20260603 20:44:06.338740   185 timer.h:53] func <Proc Lidar> timer: 86.2575 ms
+I20260603 20:44:06.339217   185 laser_mapping.cc:382] get cloud at 1725172696.3, latest imu: 1725172697.292
+[0;31mE20260603 20:44:06.341852   185 imu_processing.hpp:223] get abnormal dt: 0.397089
+[mI20260603 20:44:06.539646   185 laser_mapping.cc:288] delta norm: 0.00503786, 0.0691649
+I20260603 20:44:06.540163   185 laser_mapping.cc:300] [ mapping ]: In num: 9584 down 4715 Map grid num: 519 effect num : 4681
+I20260603 20:44:06.619033   185 timer.h:53] func <Proc Lidar> timer: 279.811 ms
+I20260603 20:44:06.619719   185 laser_mapping.cc:382] get cloud at 1725172696.6, latest imu: 1725172697.607
+I20260603 20:44:06.826965   185 laser_mapping.cc:288] delta norm: 0.00106258, 0.00293998
+I20260603 20:44:06.827478   185 laser_mapping.cc:300] [ mapping ]: In num: 9584 down 4715 Map grid num: 519 effect num : 4676
+I20260603 20:44:06.912271   185 timer.h:53] func <Proc Lidar> timer: 292.546 ms
+I20260603 20:44:06.913017   185 laser_mapping.cc:382] get cloud at 1725172696.8, latest imu: 1725172697.932
+[0;31mE20260603 20:44:06.917544   185 imu_processing.hpp:223] get abnormal dt: 0.347074
+[mI20260603 20:44:07.320631   185 laser_mapping.cc:288] delta norm: 0.00633795, 0.061551
+I20260603 20:44:07.321208   185 laser_mapping.cc:300] [ mapping ]: In num: 13656 down 5381 Map grid num: 519 effect num : 5331
+I20260603 20:44:07.427325   185 timer.h:53] func <Proc Lidar> timer: 514.302 ms
+I20260603 20:44:07.428006   185 laser_mapping.cc:382] get cloud at 1725172697.5, latest imu: 1725172698.502
+[0;31mE20260603 20:44:07.431984   185 imu_processing.hpp:223] get abnormal dt: 0.169973
+[m[0;31mE20260603 20:44:07.434342   185 laser_mapping.cc:233] 检测到雷达断流，时长：0.700005
+[mI20260603 20:44:07.842700   185 laser_mapping.cc:288] delta norm: 0.00337745, 0.0677804
+I20260603 20:44:07.843519   185 laser_mapping.cc:300] [ mapping ]: In num: 13654 down 5419 Map grid num: 519 effect num : 5368
+I20260603 20:44:07.954413   185 timer.h:53] func <Proc Lidar> timer: 526.402 ms
+I20260603 20:44:07.954770   185 laser_mapping.cc:382] get cloud at 1725172698.0999, latest imu: 1725172699.087
+[0;31mE20260603 20:44:07.956182   185 imu_processing.hpp:223] get abnormal dt: 0.232085
+[m[0;31mE20260603 20:44:07.956378   185 laser_mapping.cc:233] 检测到雷达断流，时长：0.599889
+[mI20260603 20:44:08.082304   185 laser_mapping.cc:288] delta norm: 0.00410868, 0.0944586
+I20260603 20:44:08.082677   185 laser_mapping.cc:300] [ mapping ]: In num: 5486 down 3005 Map grid num: 519 effect num : 2986
+I20260603 20:44:08.127399   185 timer.h:53] func <Proc Lidar> timer: 172.623 ms
+I20260603 20:44:08.128142   185 laser_mapping.cc:382] get cloud at 1725172698.3, latest imu: 1725172699.282
+I20260603 20:44:08.181381   185 laser_mapping.cc:288] delta norm: 0.00152724, 0.0155399
+I20260603 20:44:08.181708   185 laser_mapping.cc:300] [ mapping ]: In num: 5486 down 3005 Map grid num: 519 effect num : 2972
+I20260603 20:44:08.217468   185 timer.h:53] func <Proc Lidar> timer: 89.3198 ms
+I20260603 20:44:08.217813   185 laser_mapping.cc:382] get cloud at 1725172698.4, latest imu: 1725172699.382
+I20260603 20:44:08.258172   185 laser_mapping.cc:288] delta norm: 0.000288061, 0.005115
+I20260603 20:44:08.258520   185 laser_mapping.cc:300] [ mapping ]: In num: 5486 down 3005 Map grid num: 519 effect num : 2981
+I20260603 20:44:08.293694   185 timer.h:53] func <Proc Lidar> timer: 75.8696 ms
+I20260603 20:44:08.294695   185 laser_mapping.cc:382] get cloud at 1725172698.5, latest imu: 1725172699.467
+[0;31mE20260603 20:44:08.298874   185 imu_processing.hpp:223] get abnormal dt: 0.302194
+[mI20260603 20:44:08.516113   185 laser_mapping.cc:288] delta norm: 0.00106422, 0.0611432
+I20260603 20:44:08.516688   185 laser_mapping.cc:300] [ mapping ]: In num: 13625 down 5321 Map grid num: 519 effect num : 5260
+I20260603 20:44:08.614910   185 timer.h:53] func <Proc Lidar> timer: 320.213 ms
+I20260603 20:44:08.615232   185 laser_mapping.cc:382] get cloud at 1725172698.7999, latest imu: 1725172699.822
+I20260603 20:44:08.758859   185 laser_mapping.cc:288] delta norm: 0.000714985, 0.0108946
+I20260603 20:44:08.759419   185 laser_mapping.cc:300] [ mapping ]: In num: 13625 down 5321 Map grid num: 519 effect num : 5270
+I20260603 20:44:08.864212   185 timer.h:53] func <Proc Lidar> timer: 248.974 ms
+I20260603 20:44:08.864892   185 laser_mapping.cc:382] get cloud at 1725172699, latest imu: 1725172700.102
+[0;31mE20260603 20:44:08.868700   185 imu_processing.hpp:223] get abnormal dt: 0.38705
+[mI20260603 20:44:09.234479   185 laser_mapping.cc:288] delta norm: 0.00128371, 0.0225421
+I20260603 20:44:09.235050   185 laser_mapping.cc:300] [ mapping ]: In num: 12984 down 5313 Map grid num: 519 effect num : 5251
+I20260603 20:44:09.340793   185 timer.h:53] func <Proc Lidar> timer: 475.897 ms
+I20260603 20:44:09.341120   185 laser_mapping.cc:382] get cloud at 1725172699.6, latest imu: 1725172700.632
+[0;31mE20260603 20:44:09.343421   185 laser_mapping.cc:233] 检测到雷达断流，时长：0.600038
+[mI20260603 20:44:09.466048   185 laser_mapping.cc:288] delta norm: 0.00573034, 0.0985595
+I20260603 20:44:09.466421   185 laser_mapping.cc:300] [ mapping ]: In num: 5495 down 2967 Map grid num: 519 effect num : 2940
+I20260603 20:44:09.509330   185 timer.h:53] func <Proc Lidar> timer: 168.205 ms
+I20260603 20:44:09.509644   185 laser_mapping.cc:382] get cloud at 1725172699.7999, latest imu: 1725172700.8169
+[0;31mE20260603 20:44:09.511003   185 imu_processing.hpp:223] get abnormal dt: 0.122035
+[mI20260603 20:44:09.620395   185 laser_mapping.cc:288] delta norm: 0.00323084, 0.061086
+I20260603 20:44:09.620702   185 laser_mapping.cc:300] [ mapping ]: In num: 4823 down 2645 Map grid num: 519 effect num : 2619
+I20260603 20:44:09.649570   185 timer.h:53] func <Proc Lidar> timer: 139.919 ms
+I20260603 20:44:09.649938   185 laser_mapping.cc:382] get cloud at 1725172700, latest imu: 1725172700.9719
+I20260603 20:44:09.698998   185 laser_mapping.cc:288] delta norm: 0.00153638, 0.0426459
+I20260603 20:44:09.699285   185 laser_mapping.cc:300] [ mapping ]: In num: 4823 down 2645 Map grid num: 519 effect num : 2624
+I20260603 20:44:09.726703   185 timer.h:53] func <Proc Lidar> timer: 76.7584 ms
+[0;31mE20260603 20:44:09.727246   185 laser_mapping.cc:377] lidar loop back, clear buffer
+[m[0;31mE20260603 20:44:09.727295   185 laser_mapping.cc:379] lidar loop back, dt: -3.52859e-05
+[m[0;33mW20260603 20:44:09.727310   185 laser_mapping.cc:185] sync package failed
+[mI20260603 20:44:09.727353   185 timer.h:53] func <Proc Lidar> timer: 0.109462 ms
+I20260603 20:44:09.727977   185 laser_mapping.cc:382] get cloud at 1725172700.2, latest imu: 1725172701.0619
+[0;31mE20260603 20:44:09.731803   185 imu_processing.hpp:223] get abnormal dt: 0.202016
+[mI20260603 20:44:10.167070   185 laser_mapping.cc:288] delta norm: 0.0148654, 0.0749253
+I20260603 20:44:10.167672   185 laser_mapping.cc:300] [ mapping ]: In num: 13030 down 5290 Map grid num: 520 effect num : 5227
+I20260603 20:44:10.264055   185 timer.h:53] func <Proc Lidar> timer: 536.072 ms
+I20260603 20:44:10.264734   185 laser_mapping.cc:382] get cloud at 1725172700.6, latest imu: 1725172701.6569
+[0;31mE20260603 20:44:10.269196   185 imu_processing.hpp:223] get abnormal dt: 0.231912
+[mI20260603 20:44:10.533236   185 laser_mapping.cc:288] delta norm: 0.00254827, 0.0640391
+I20260603 20:44:10.533833   185 laser_mapping.cc:300] [ mapping ]: In num: 13653 down 5424 Map grid num: 520 effect num : 5366
+I20260603 20:44:10.644671   185 timer.h:53] func <Proc Lidar> timer: 379.932 ms
+I20260603 20:44:10.646026   185 laser_mapping.cc:382] get cloud at 1725172701, latest imu: 1725172702.0769
+[0;31mE20260603 20:44:10.651625   185 imu_processing.hpp:223] get abnormal dt: 0.154994
+[mI20260603 20:44:11.017369   185 laser_mapping.cc:288] delta norm: 0.00600384, 0.081073
+I20260603 20:44:11.017947   185 laser_mapping.cc:300] [ mapping ]: In num: 12968 down 5290 Map grid num: 521 effect num : 5232
+I20260603 20:44:11.123523   185 timer.h:53] func <Proc Lidar> timer: 477.494 ms
+I20260603 20:44:11.124063   185 laser_mapping.cc:382] get cloud at 1725172701.6, latest imu: 1725172702.6119
+[0;31mE20260603 20:44:11.126796   185 imu_processing.hpp:223] get abnormal dt: 0.456984
+[m[0;31mE20260603 20:44:11.127302   185 laser_mapping.cc:233] 检测到雷达断流，时长：0.599998
+[mI20260603 20:44:11.380108   185 laser_mapping.cc:288] delta norm: 0.00249772, 0.0489155
+I20260603 20:44:11.380630   185 laser_mapping.cc:300] [ mapping ]: In num: 9557 down 4743 Map grid num: 521 effect num : 4688
+I20260603 20:44:11.468588   185 timer.h:53] func <Proc Lidar> timer: 344.52 ms
+I20260603 20:44:11.469112   185 laser_mapping.cc:382] get cloud at 1725172702, latest imu: 1725172702.9919
+[0;31mE20260603 20:44:11.471789   185 imu_processing.hpp:223] get abnormal dt: 0.37701
+[mI20260603 20:44:11.701366   185 laser_mapping.cc:288] delta norm: 0.00464122, 0.0510045
+I20260603 20:44:11.701889   185 laser_mapping.cc:300] [ mapping ]: In num: 9592 down 4748 Map grid num: 521 effect num : 4712
+I20260603 20:44:11.786100   185 timer.h:53] func <Proc Lidar> timer: 316.983 ms
+I20260603 20:44:11.786792   185 laser_mapping.cc:382] get cloud at 1725172702.2, latest imu: 1725172703.3469
+I20260603 20:44:12.063688   185 laser_mapping.cc:288] delta norm: 0.000730671, 0.00835182
+I20260603 20:44:12.064231   185 laser_mapping.cc:300] [ mapping ]: In num: 9592 down 4748 Map grid num: 521 effect num : 4697
+I20260603 20:44:12.148988   185 timer.h:53] func <Proc Lidar> timer: 362.192 ms
+I20260603 20:44:12.149514   185 laser_mapping.cc:382] get cloud at 1725172702.7, latest imu: 1725172703.7519
+[0;31mE20260603 20:44:12.152215   185 imu_processing.hpp:223] get abnormal dt: 0.411887
+[m[0;31mE20260603 20:44:12.152711   185 laser_mapping.cc:233] 检测到雷达断流，时长：0.500005
+[mI20260603 20:44:12.355784   185 laser_mapping.cc:288] delta norm: 0.00533081, 0.0719521
+I20260603 20:44:12.356303   185 laser_mapping.cc:300] [ mapping ]: In num: 9510 down 4721 Map grid num: 522 effect num : 4674
+I20260603 20:44:12.440796   185 timer.h:53] func <Proc Lidar> timer: 291.276 ms
+I20260603 20:44:12.441468   185 laser_mapping.cc:382] get cloud at 1725172703, latest imu: 1725172704.0718
+[0;31mE20260603 20:44:12.445269   185 imu_processing.hpp:223] get abnormal dt: 0.192021
+[mI20260603 20:44:12.664124   185 laser_mapping.cc:288] delta norm: 0.00451018, 0.0429384
+I20260603 20:44:12.664711   185 laser_mapping.cc:300] [ mapping ]: In num: 12975 down 5239 Map grid num: 524 effect num : 5183
+I20260603 20:44:12.765930   185 timer.h:53] func <Proc Lidar> timer: 324.457 ms
+I20260603 20:44:12.766439   185 laser_mapping.cc:382] get cloud at 1725172703.4, latest imu: 1725172704.4368
+[0;31mE20260603 20:44:12.769166   185 imu_processing.hpp:223] get abnormal dt: 0.146923
+[mI20260603 20:44:12.975327   185 laser_mapping.cc:288] delta norm: 0.0074381, 0.084079
+I20260603 20:44:12.975878   185 laser_mapping.cc:300] [ mapping ]: In num: 9529 down 4706 Map grid num: 525 effect num : 4675
+I20260603 20:44:13.062080   185 timer.h:53] func <Proc Lidar> timer: 295.635 ms
+I20260603 20:44:13.062783   185 laser_mapping.cc:382] get cloud at 1725172703.6, latest imu: 1725172704.7668
+[0;31mE20260603 20:44:13.067737   185 imu_processing.hpp:223] get abnormal dt: 0.151896
+[mI20260603 20:44:13.298725   185 laser_mapping.cc:288] delta norm: 0.00246818, 0.0730465
+I20260603 20:44:13.299299   185 laser_mapping.cc:300] [ mapping ]: In num: 13591 down 5378 Map grid num: 525 effect num : 5341
+I20260603 20:44:13.406008   185 timer.h:53] func <Proc Lidar> timer: 343.22 ms
+I20260603 20:44:13.407423   185 laser_mapping.cc:382] get cloud at 1725172704, latest imu: 1725172705.1468
+[0;31mE20260603 20:44:13.413105   185 imu_processing.hpp:223] get abnormal dt: 0.271983
+[mI20260603 20:44:13.666891   185 laser_mapping.cc:288] delta norm: 0.00523676, 0.0147045
+I20260603 20:44:13.667470   185 laser_mapping.cc:300] [ mapping ]: In num: 13021 down 5295 Map grid num: 526 effect num : 5248
+I20260603 20:44:13.774716   185 timer.h:53] func <Proc Lidar> timer: 367.291 ms
+I20260603 20:44:13.775252   185 laser_mapping.cc:382] get cloud at 1725172704.5, latest imu: 1725172705.5568
+[0;31mE20260603 20:44:13.777964   185 imu_processing.hpp:223] get abnormal dt: 0.236908
+[m[0;31mE20260603 20:44:13.778474   185 laser_mapping.cc:233] 检测到雷达断流，时长：0.500002
+[mI20260603 20:44:14.079051   185 laser_mapping.cc:288] delta norm: 0.00837026, 0.0742926
+I20260603 20:44:14.079558   185 laser_mapping.cc:300] [ mapping ]: In num: 9554 down 4753 Map grid num: 526 effect num : 4711
+I20260603 20:44:14.168397   185 timer.h:53] func <Proc Lidar> timer: 393.139 ms
+I20260603 20:44:14.168730   185 laser_mapping.cc:382] get cloud at 1725172705, latest imu: 1725172705.9918
+[0;31mE20260603 20:44:14.170115   185 imu_processing.hpp:223] get abnormal dt: 0.166937
+[m[0;31mE20260603 20:44:14.170315   185 laser_mapping.cc:233] 检测到雷达断流，时长：0.500033
+[mI20260603 20:44:14.329967   185 laser_mapping.cc:288] delta norm: 0.00903383, 0.106609
+I20260603 20:44:14.330329   185 laser_mapping.cc:300] [ mapping ]: In num: 5474 down 2995 Map grid num: 526 effect num : 2967
+I20260603 20:44:14.370817   185 timer.h:53] func <Proc Lidar> timer: 202.08 ms
+I20260603 20:44:14.371330   185 laser_mapping.cc:382] get cloud at 1725172705.2, latest imu: 1725172706.2167
+I20260603 20:44:14.641800   185 laser_mapping.cc:288] delta norm: 0.0183898, 0.25767
+I20260603 20:44:14.642346   185 laser_mapping.cc:300] [ mapping ]: In num: 9746 down 4744 Map grid num: 532 effect num : 4704
+I20260603 20:44:14.722154   185 timer.h:53] func <Proc Lidar> timer: 350.82 ms
+I20260603 20:44:14.722687   185 laser_mapping.cc:382] get cloud at 1725172705.6, latest imu: 1725172706.6067
+[0;31mE20260603 20:44:14.725435   185 imu_processing.hpp:223] get abnormal dt: 0.256872
+[mI20260603 20:44:15.095685   185 laser_mapping.cc:284] set state as prediction
+I20260603 20:44:15.095717   185 laser_mapping.cc:288] delta norm: 0, 1.37718e-17
+I20260603 20:44:15.096570   185 laser_mapping.cc:300] [ mapping ]: In num: 9864 down 4921 Map grid num: 656 effect num : 4753
+I20260603 20:44:15.183671   185 timer.h:53] func <Proc Lidar> timer: 460.978 ms
+I20260603 20:44:15.184425   185 laser_mapping.cc:382] get cloud at 1725172706, latest imu: 1725172707.1216
+[0;31mE20260603 20:44:15.189688   185 imu_processing.hpp:223] get abnormal dt: 0.291878
+[mI20260603 20:44:15.577314   185 laser_mapping.cc:284] set state as prediction
+I20260603 20:44:15.577349   185 laser_mapping.cc:288] delta norm: 0, 9.76869e-17
+I20260603 20:44:15.578295   185 laser_mapping.cc:300] [ mapping ]: In num: 14283 down 6060 Map grid num: 784 effect num : 4308
+I20260603 20:44:15.651692   185 timer.h:53] func <Proc Lidar> timer: 467.261 ms
+I20260603 20:44:15.652230   185 laser_mapping.cc:382] get cloud at 1725172706.6, latest imu: 1725172707.6416
+[0;31mE20260603 20:44:15.655126   185 imu_processing.hpp:223] get abnormal dt: 0.389962
+[m[0;31mE20260603 20:44:15.657053   185 laser_mapping.cc:233] 检测到雷达断流，时长：0.600029
+[mI20260603 20:44:15.977141   185 laser_mapping.cc:284] set state as prediction
+I20260603 20:44:15.977176   185 laser_mapping.cc:288] delta norm: 0, 6.53077e-17
+I20260603 20:44:15.977919   185 laser_mapping.cc:300] [ mapping ]: In num: 10409 down 5035 Map grid num: 898 effect num : 3862
+I20260603 20:44:16.037930   185 timer.h:53] func <Proc Lidar> timer: 385.689 ms
+I20260603 20:44:16.038698   185 laser_mapping.cc:382] get cloud at 1725172707, latest imu: 1725172708.0716
+[0;31mE20260603 20:44:16.043958   185 imu_processing.hpp:223] get abnormal dt: 0.421659
+[mI20260603 20:44:16.502061   185 laser_mapping.cc:284] set state as prediction
+I20260603 20:44:16.502096   185 laser_mapping.cc:288] delta norm: 0, 3.40554e-17
+I20260603 20:44:16.503019   185 laser_mapping.cc:300] [ mapping ]: In num: 15147 down 6516 Map grid num: 1004 effect num : 5166
+I20260603 20:44:16.600417   185 timer.h:53] func <Proc Lidar> timer: 561.711 ms
+I20260603 20:44:16.600997   185 laser_mapping.cc:382] get cloud at 1725172707.7, latest imu: 1725172708.6966
+[0;31mE20260603 20:44:16.603928   185 imu_processing.hpp:223] get abnormal dt: 0.441661
+[m[0;31mE20260603 20:44:16.604601   185 laser_mapping.cc:233] 检测到雷达断流，时长：0.700002
+[mI20260603 20:44:17.045293   185 laser_mapping.cc:284] set state as prediction
+I20260603 20:44:17.045326   185 laser_mapping.cc:288] delta norm: 0, 6.23089e-17
+I20260603 20:44:17.046172   185 laser_mapping.cc:300] [ mapping ]: In num: 10760 down 5227 Map grid num: 1077 effect num : 4925
+I20260603 20:44:17.140125   185 timer.h:53] func <Proc Lidar> timer: 539.124 ms
+I20260603 20:44:17.140676   185 laser_mapping.cc:382] get cloud at 1725172708.2999, latest imu: 1725172709.2965
+[0;31mE20260603 20:44:17.143563   185 imu_processing.hpp:223] get abnormal dt: 0.271781
+[m[0;31mE20260603 20:44:17.144182   185 laser_mapping.cc:233] 检测到雷达断流，时长：0.599951
+[mI20260603 20:44:17.465790   185 laser_mapping.cc:284] set state as prediction
+I20260603 20:44:17.465824   185 laser_mapping.cc:288] delta norm: 0, 2.12835e-17
+I20260603 20:44:17.466641   185 laser_mapping.cc:300] [ mapping ]: In num: 10396 down 4993 Map grid num: 1218 effect num : 3871
+I20260603 20:44:17.529031   185 timer.h:53] func <Proc Lidar> timer: 388.348 ms
+I20260603 20:44:17.529559   185 laser_mapping.cc:382] get cloud at 1725172708.7, latest imu: 1725172709.7265
+[0;31mE20260603 20:44:17.532367   185 imu_processing.hpp:223] get abnormal dt: 0.296629
+[mI20260603 20:44:17.833977   185 laser_mapping.cc:284] set state as prediction
+I20260603 20:44:17.834017   185 laser_mapping.cc:288] delta norm: 0, 9.39665e-17
+I20260603 20:44:17.834803   185 laser_mapping.cc:300] [ mapping ]: In num: 9672 down 4708 Map grid num: 1346 effect num : 3740
+I20260603 20:44:17.890029   185 timer.h:53] func <Proc Lidar> timer: 360.46 ms
+I20260603 20:44:17.890781   185 laser_mapping.cc:382] get cloud at 1725172709, latest imu: 1725172710.1315
+I20260603 20:44:18.102387   185 laser_mapping.cc:288] delta norm: 0.0188241, 0.183495
+I20260603 20:44:18.103150   185 laser_mapping.cc:300] [ mapping ]: In num: 9672 down 4708 Map grid num: 1347 effect num : 4437
+I20260603 20:44:18.175982   185 timer.h:53] func <Proc Lidar> timer: 285.197 ms
+I20260603 20:44:18.176539   185 laser_mapping.cc:382] get cloud at 1725172709.4, latest imu: 1725172710.4464
+[0;31mE20260603 20:44:18.179421   185 imu_processing.hpp:223] get abnormal dt: 0.496725
+[mI20260603 20:44:18.443200   185 laser_mapping.cc:284] set state as prediction
+I20260603 20:44:18.443235   185 laser_mapping.cc:288] delta norm: 0, 4.93366e-16
+I20260603 20:44:18.443948   185 laser_mapping.cc:300] [ mapping ]: In num: 9488 down 4378 Map grid num: 1510 effect num : 3467
+I20260603 20:44:18.495199   185 timer.h:53] func <Proc Lidar> timer: 318.655 ms
+I20260603 20:44:18.495754   185 laser_mapping.cc:382] get cloud at 1725172709.7999, latest imu: 1725172710.8014
+[0;31mE20260603 20:44:18.498483   185 imu_processing.hpp:223] get abnormal dt: 0.226514
+[mI20260603 20:44:18.706571   185 laser_mapping.cc:284] set state as prediction
+I20260603 20:44:18.706606   185 laser_mapping.cc:288] delta norm: 0, 1.43056e-15
+I20260603 20:44:18.707269   185 laser_mapping.cc:300] [ mapping ]: In num: 8540 down 3786 Map grid num: 1632 effect num : 3057
+I20260603 20:44:18.707297   185 laser_mapping.cc:354] LIO: create kf 1, state: 0.526718 0.227169 -0.10033, kf opt pose:   0.526718   0.227169 -0.0997954, lio pose: 0.526718 0.227169 -0.10033
+I20260603 20:44:18.746169   187 loop_closing.cc:111] skip because last loop kf: 0
+I20260603 20:44:18.746165   185 timer.h:53] func <Proc Lidar> timer: 250.404 ms
+I20260603 20:44:18.746212   187 loop_closing.cc:84] lc: get kf 1 candi: 0
+I20260603 20:44:18.746465   187 loop_closing.cc:336] loop outliers: 0/0
+I20260603 20:44:18.746479   187 loop_closing.cc:349] optimize finished, loops: 0
+I20260603 20:44:18.746918   185 laser_mapping.cc:382] get cloud at 1725172710, latest imu: 1725172711.0814
+[0;31mE20260603 20:44:18.751080   185 imu_processing.hpp:223] get abnormal dt: 0.231568
+[mI20260603 20:44:19.134299   185 laser_mapping.cc:284] set state as prediction
+I20260603 20:44:19.134343   185 laser_mapping.cc:288] delta norm: 0, 8.88798e-16
+I20260603 20:44:19.135211   185 laser_mapping.cc:300] [ mapping ]: In num: 13351 down 5337 Map grid num: 1758 effect num : 4294
+I20260603 20:44:19.203810   185 timer.h:53] func <Proc Lidar> timer: 456.888 ms
+I20260603 20:44:19.204375   185 laser_mapping.cc:382] get cloud at 1725172710.6, latest imu: 1725172711.5865
+[0;31mE20260603 20:44:19.207238   185 imu_processing.hpp:223] get abnormal dt: 0.246456
+[m[0;31mE20260603 20:44:19.207813   185 laser_mapping.cc:233] 检测到雷达断流，时长：0.599993
+[mI20260603 20:44:19.436054   185 laser_mapping.cc:284] set state as prediction
+I20260603 20:44:19.436093   185 laser_mapping.cc:288] delta norm: 0, 5.75946e-16
+I20260603 20:44:19.436941   185 laser_mapping.cc:300] [ mapping ]: In num: 9974 down 4591 Map grid num: 2016 effect num : 3487
+I20260603 20:44:19.436969   185 laser_mapping.cc:354] LIO: create kf 2, state: 0.542603 0.316978 0.211341, kf opt pose: 0.497036 0.297124 0.315705, lio pose: 0.542603 0.316978 0.211341
+I20260603 20:44:19.488688   187 loop_closing.cc:111] skip because last loop kf: 0
+I20260603 20:44:19.488683   185 timer.h:53] func <Proc Lidar> timer: 284.304 ms
+I20260603 20:44:19.488729   187 loop_closing.cc:84] lc: get kf 2 candi: 0
+I20260603 20:44:19.489051   187 loop_closing.cc:336] loop outliers: 0/0
+I20260603 20:44:19.489063   187 loop_closing.cc:349] optimize finished, loops: 0
+I20260603 20:44:19.489260   185 laser_mapping.cc:382] get cloud at 1725172710.8999, latest imu: 1725172711.9065
+[0;31mE20260603 20:44:19.492182   185 imu_processing.hpp:223] get abnormal dt: 0.101563
+[mI20260603 20:44:19.821606   185 laser_mapping.cc:284] set state as prediction
+I20260603 20:44:19.821640   185 laser_mapping.cc:288] delta norm: 0, 1.89184e-15
+I20260603 20:44:19.822649   185 laser_mapping.cc:300] [ mapping ]: In num: 10394 down 5146 Map grid num: 2204 effect num : 4315
+I20260603 20:44:19.891794   185 timer.h:53] func <Proc Lidar> timer: 402.527 ms
+I20260603 20:44:19.892572   185 laser_mapping.cc:382] get cloud at 1725172711.2, latest imu: 1725172712.3515
+I20260603 20:44:20.544049   185 laser_mapping.cc:284] set state as prediction
+I20260603 20:44:20.544086   185 laser_mapping.cc:288] delta norm: 0, 1.69542e-15
+I20260603 20:44:20.545401   185 laser_mapping.cc:300] [ mapping ]: In num: 15899 down 7049 Map grid num: 2440 effect num : 5819
+I20260603 20:44:20.545428   185 laser_mapping.cc:354] LIO: create kf 3, state: 0.508469 0.512472 0.801302, kf opt pose:   0.224351    1.01158 -0.0496018, lio pose: 0.508469 0.512472 0.801302
+I20260603 20:44:20.668146   185 timer.h:53] func <Proc Lidar> timer: 775.568 ms
+I20260603 20:44:20.668169   187 loop_closing.cc:111] skip because last loop kf: 0
+I20260603 20:44:20.668200   187 loop_closing.cc:84] lc: get kf 3 candi: 0
+I20260603 20:44:20.668462   187 loop_closing.cc:336] loop outliers: 0/0
+I20260603 20:44:20.668471   187 loop_closing.cc:349] optimize finished, loops: 0
+I20260603 20:44:20.668497   185 laser_mapping.cc:382] get cloud at 1725172712.2, latest imu: 1725172713.2166
+[0;31mE20260603 20:44:20.669960   185 imu_processing.hpp:223] get abnormal dt: 0.186532
+[m[0;31mE20260603 20:44:20.670147   185 laser_mapping.cc:233] 检测到雷达断流，时长：0.999952
+[mI20260603 20:44:20.700372   185 laser_mapping.cc:284] set state as prediction
+I20260603 20:44:20.700407   185 laser_mapping.cc:288] delta norm: 0, 2.8318e-15
+I20260603 20:44:20.700883   185 laser_mapping.cc:300] [ mapping ]: In num: 5012 down 2727 Map grid num: 2630 effect num : 714
+I20260603 20:44:20.717988   185 timer.h:53] func <Proc Lidar> timer: 49.4857 ms
+I20260603 20:44:20.718925   185 laser_mapping.cc:382] get cloud at 1725172712.3, latest imu: 1725172713.2715
+I20260603 20:44:21.200543   185 laser_mapping.cc:284] set state as prediction
+I20260603 20:44:21.200601   185 laser_mapping.cc:288] delta norm: 0, 3.07803e-15
+I20260603 20:44:21.201687   185 laser_mapping.cc:300] [ mapping ]: In num: 16518 down 6937 Map grid num: 2775 effect num : 5036
+I20260603 20:44:21.286875   185 timer.h:53] func <Proc Lidar> timer: 567.948 ms
+I20260603 20:44:21.288723   185 laser_mapping.cc:382] get cloud at 1725172712.9, latest imu: 1725172713.9065
+[0;31mE20260603 20:44:21.295279   185 laser_mapping.cc:233] 检测到雷达断流，时长：0.600008
+[mI20260603 20:44:22.009999   185 laser_mapping.cc:288] delta norm: 0.0089292, 0.215179
+I20260603 20:44:22.010828   185 laser_mapping.cc:300] [ mapping ]: In num: 16518 down 6937 Map grid num: 2783 effect num : 6724
+I20260603 20:44:22.174167   185 timer.h:53] func <Proc Lidar> timer: 885.439 ms
+I20260603 20:44:22.174706   185 laser_mapping.cc:382] get cloud at 1725172713.9, latest imu: 1725172714.8915
+[0;31mE20260603 20:44:22.177548   185 imu_processing.hpp:223] get abnormal dt: 0.716637
+[m[0;31mE20260603 20:44:22.178153   185 laser_mapping.cc:233] 检测到雷达断流，时长：0.999982
+[mI20260603 20:44:22.532335   185 laser_mapping.cc:284] set state as prediction
+I20260603 20:44:22.532371   185 laser_mapping.cc:288] delta norm: 0, 3.98363e-16
+I20260603 20:44:22.533329   185 laser_mapping.cc:300] [ mapping ]: In num: 10431 down 5470 Map grid num: 2919 effect num : 4404
+I20260603 20:44:22.619390   185 timer.h:53] func <Proc Lidar> timer: 444.68 ms
+I20260603 20:44:22.619931   185 laser_mapping.cc:382] get cloud at 1725172714.4, latest imu: 1725172715.3815
+[0;31mE20260603 20:44:22.622740   185 laser_mapping.cc:233] 检测到雷达断流，时长：0.500014
+[mI20260603 20:44:23.076745   185 laser_mapping.cc:288] delta norm: 0.00742255, 0.0420713
+I20260603 20:44:23.077443   185 laser_mapping.cc:300] [ mapping ]: In num: 10431 down 5470 Map grid num: 2923 effect num : 5249
+I20260603 20:44:23.179806   185 timer.h:53] func <Proc Lidar> timer: 559.869 ms
+I20260603 20:44:23.180178   185 laser_mapping.cc:382] get cloud at 1725172715, latest imu: 1725172716.0065
+[0;31mE20260603 20:44:23.181625   185 imu_processing.hpp:223] get abnormal dt: 0.891655
+[m[0;31mE20260603 20:44:23.181819   185 laser_mapping.cc:233] 检测到雷达断流，时长：0.60004
+[mI20260603 20:44:23.307997   185 laser_mapping.cc:284] set state as prediction
+I20260603 20:44:23.308032   185 laser_mapping.cc:288] delta norm: 0, 4.59383e-16
+I20260603 20:44:23.308434   185 laser_mapping.cc:300] [ mapping ]: In num: 5095 down 2502 Map grid num: 2930 effect num : 2420
+I20260603 20:44:23.342621   185 timer.h:53] func <Proc Lidar> timer: 162.438 ms
+I20260603 20:44:23.343379   185 laser_mapping.cc:382] get cloud at 1725172715.2, latest imu: 1725172716.1865
+[0;31mE20260603 20:44:23.347754   185 imu_processing.hpp:223] get abnormal dt: 0.281525
+[mI20260603 20:44:24.082099   185 laser_mapping.cc:284] set state as prediction
+I20260603 20:44:24.082136   185 laser_mapping.cc:288] delta norm: 0, 2.62465e-15
+I20260603 20:44:24.082927   185 laser_mapping.cc:300] [ mapping ]: In num: 15329 down 6335 Map grid num: 2972 effect num : 6049
+I20260603 20:44:24.208077   185 timer.h:53] func <Proc Lidar> timer: 864.695 ms
+I20260603 20:44:24.208796   185 laser_mapping.cc:382] get cloud at 1725172716, latest imu: 1725172717.1514
+[0;31mE20260603 20:44:24.212971   185 imu_processing.hpp:223] get abnormal dt: 0.606431
+[m[0;31mE20260603 20:44:24.213816   185 laser_mapping.cc:233] 检测到雷达断流，时长：0.799998
+[mI20260603 20:44:24.965047   185 laser_mapping.cc:288] delta norm: 0.14886, 0.190995
+I20260603 20:44:24.965876   185 laser_mapping.cc:300] [ mapping ]: In num: 15035 down 6445 Map grid num: 3005 effect num : 6152
+I20260603 20:44:25.108606   185 timer.h:53] func <Proc Lidar> timer: 899.805 ms
+I20260603 20:44:25.109336   185 laser_mapping.cc:382] get cloud at 1725172717, latest imu: 1725172718.1513
+[0;31mE20260603 20:44:25.113615   185 imu_processing.hpp:223] get abnormal dt: 0.951496
+[m[0;31mE20260603 20:44:25.114315   185 laser_mapping.cc:233] 检测到雷达断流，时长：0.999987
+[mI20260603 20:44:25.890465   185 laser_mapping.cc:284] set state as prediction
+I20260603 20:44:25.890501   185 laser_mapping.cc:288] delta norm: 0, 1.9671e-15
+I20260603 20:44:25.891592   185 laser_mapping.cc:300] [ mapping ]: In num: 15139 down 6637 Map grid num: 3053 effect num : 6277
+I20260603 20:44:26.042023   185 timer.h:53] func <Proc Lidar> timer: 932.68 ms
+I20260603 20:44:26.042596   185 laser_mapping.cc:382] get cloud at 1725172718.1999, latest imu: 1725172719.1862
+[0;31mE20260603 20:44:26.045516   185 imu_processing.hpp:223] get abnormal dt: 0.951337
+[m[0;31mE20260603 20:44:26.046188   185 laser_mapping.cc:233] 检测到雷达断流，时长：1.19995
+[mI20260603 20:44:26.456288   185 laser_mapping.cc:284] set state as prediction
+I20260603 20:44:26.456326   185 laser_mapping.cc:288] delta norm: 0, 1.17297e-15
+I20260603 20:44:26.457304   185 laser_mapping.cc:300] [ mapping ]: In num: 10731 down 5482 Map grid num: 3180 effect num : 4411
+I20260603 20:44:26.540374   185 timer.h:53] func <Proc Lidar> timer: 497.775 ms
+I20260603 20:44:26.540942   185 laser_mapping.cc:382] get cloud at 1725172718.6999, latest imu: 1725172719.7412
+[0;31mE20260603 20:44:26.543887   185 laser_mapping.cc:233] 检测到雷达断流，时长：0.500012
+[mI20260603 20:44:26.878024   185 laser_mapping.cc:288] delta norm: 0.0125954, 0.107444
+I20260603 20:44:26.878731   185 laser_mapping.cc:300] [ mapping ]: In num: 10731 down 5482 Map grid num: 3183 effect num : 5194
+I20260603 20:44:26.980469   185 timer.h:53] func <Proc Lidar> timer: 439.522 ms
+I20260603 20:44:26.981045   185 laser_mapping.cc:382] get cloud at 1725172719.1999, latest imu: 1725172720.2312
+[0;31mE20260603 20:44:26.983976   185 imu_processing.hpp:223] get abnormal dt: 0.886354
+[mI20260603 20:44:27.337654   185 laser_mapping.cc:284] set state as prediction
+I20260603 20:44:27.337688   185 laser_mapping.cc:288] delta norm: 0, 1.27465e-15
+I20260603 20:44:27.338675   185 laser_mapping.cc:300] [ mapping ]: In num: 10851 down 5365 Map grid num: 3327 effect num : 4055
+I20260603 20:44:27.338698   185 laser_mapping.cc:354] LIO: create kf 4, state: 0.594722  2.89262 0.825988, kf opt pose: 0.921481  2.07743 -2.01597, lio pose: 0.594722  2.89262 0.825988
+I20260603 20:44:27.408295   187 loop_closing.cc:111] skip because last loop kf: 0
+I20260603 20:44:27.408286   185 timer.h:53] func <Proc Lidar> timer: 427.236 ms
+I20260603 20:44:27.408337   187 loop_closing.cc:84] lc: get kf 4 candi: 0
+I20260603 20:44:27.408864   185 laser_mapping.cc:382] get cloud at 1725172719.7, latest imu: 1725172720.7062
+I20260603 20:44:27.409135   187 loop_closing.cc:336] loop outliers: 0/0
+I20260603 20:44:27.409152   187 loop_closing.cc:349] optimize finished, loops: 0
+[0;31mE20260603 20:44:27.411793   185 imu_processing.hpp:223] get abnormal dt: 0.441299
+[m[0;31mE20260603 20:44:27.412407   185 laser_mapping.cc:233] 检测到雷达断流，时长：0.500061
+[mI20260603 20:44:27.846618   185 laser_mapping.cc:288] delta norm: 0.30946, 1.35568
+I20260603 20:44:27.847369   185 laser_mapping.cc:300] [ mapping ]: In num: 10702 down 5165 Map grid num: 3344 effect num : 4908
+I20260603 20:44:27.937328   185 timer.h:53] func <Proc Lidar> timer: 528.46 ms
+I20260603 20:44:27.937903   185 laser_mapping.cc:382] get cloud at 1725172720.3, latest imu: 1725172721.2912
+[0;31mE20260603 20:44:27.940794   185 imu_processing.hpp:223] get abnormal dt: 0.431126
+[m[0;31mE20260603 20:44:27.941536   185 laser_mapping.cc:233] 检测到雷达断流，时长：0.600004
+[mI20260603 20:44:28.313899   185 laser_mapping.cc:288] delta norm: 0.175778, 3.64146
+I20260603 20:44:28.314702   185 laser_mapping.cc:300] [ mapping ]: In num: 10791 down 5229 Map grid num: 3392 effect num : 4297
+I20260603 20:44:28.389644   185 timer.h:53] func <Proc Lidar> timer: 451.736 ms
+I20260603 20:44:28.390143   185 laser_mapping.cc:382] get cloud at 1725172720.8, latest imu: 1725172721.7963
+[0;31mE20260603 20:44:28.392994   185 imu_processing.hpp:223] get abnormal dt: 0.306266
+[m[0;31mE20260603 20:44:28.393525   185 laser_mapping.cc:233] 检测到雷达断流，时长：0.500021
+[mI20260603 20:44:28.781769   185 laser_mapping.cc:288] delta norm: 0.304945, 1.9025
+I20260603 20:44:28.782523   185 laser_mapping.cc:300] [ mapping ]: In num: 10064 down 4981 Map grid num: 3413 effect num : 4505
+I20260603 20:44:28.860729   185 timer.h:53] func <Proc Lidar> timer: 470.58 ms
+I20260603 20:44:28.861279   185 laser_mapping.cc:382] get cloud at 1725172721.3, latest imu: 1725172722.3163
+[0;31mE20260603 20:44:28.864149   185 imu_processing.hpp:223] get abnormal dt: 0.391324
+[mI20260603 20:44:29.367261   185 laser_mapping.cc:288] delta norm: 0.116184, 1.05317
+I20260603 20:44:29.367986   185 laser_mapping.cc:300] [ mapping ]: In num: 10630 down 5290 Map grid num: 3426 effect num : 4914
+I20260603 20:44:29.460289   185 timer.h:53] func <Proc Lidar> timer: 599.002 ms
+I20260603 20:44:29.460633   185 laser_mapping.cc:382] get cloud at 1725172722, latest imu: 1725172722.9863
+[0;31mE20260603 20:44:29.461962   185 imu_processing.hpp:223] get abnormal dt: 0.396378
+[m[0;31mE20260603 20:44:29.462146   185 laser_mapping.cc:233] 检测到雷达断流，时长：0.70005
+[mI20260603 20:44:29.546262   185 laser_mapping.cc:288] delta norm: 0.12421, 1.01453
+I20260603 20:44:29.546548   185 laser_mapping.cc:300] [ mapping ]: In num: 4826 down 2083 Map grid num: 3447 effect num : 1919
+I20260603 20:44:29.571547   185 timer.h:53] func <Proc Lidar> timer: 110.909 ms
+[0;31mE20260603 20:44:29.572273   185 laser_mapping.cc:377] lidar loop back, clear buffer
+[m[0;31mE20260603 20:44:29.572315   185 laser_mapping.cc:379] lidar loop back, dt: -4.98295e-05
+[m[0;33mW20260603 20:44:29.572331   185 laser_mapping.cc:185] sync package failed
+[mI20260603 20:44:29.572376   185 timer.h:53] func <Proc Lidar> timer: 0.107625 ms
+I20260603 20:44:29.572824   185 laser_mapping.cc:382] get cloud at 1725172722.2, latest imu: 1725172723.1113
+I20260603 20:44:29.628150   185 laser_mapping.cc:288] delta norm: 0.00332483, 0.0813619
+I20260603 20:44:29.628480   185 laser_mapping.cc:300] [ mapping ]: In num: 4826 down 2083 Map grid num: 3447 effect num : 1960
+I20260603 20:44:29.632099   185 timer.h:53] func <Proc Lidar> timer: 59.272 ms
+I20260603 20:44:29.632603   185 laser_mapping.cc:382] get cloud at 1725172722.3, latest imu: 1725172723.1763
+[0;31mE20260603 20:44:29.635430   185 imu_processing.hpp:223] get abnormal dt: 0.216381
+[mI20260603 20:44:30.070629   185 laser_mapping.cc:288] delta norm: 0.0641698, 0.241071
+I20260603 20:44:30.071281   185 laser_mapping.cc:300] [ mapping ]: In num: 9623 down 4935 Map grid num: 3462 effect num : 4631
+I20260603 20:44:30.144171   185 timer.h:53] func <Proc Lidar> timer: 511.563 ms
+I20260603 20:44:30.144690   185 laser_mapping.cc:382] get cloud at 1725172722.7, latest imu: 1725172723.7463
+I20260603 20:44:30.356666   185 laser_mapping.cc:288] delta norm: 0.000830359, 0.0236909
+I20260603 20:44:30.357288   185 laser_mapping.cc:300] [ mapping ]: In num: 9623 down 4935 Map grid num: 3464 effect num : 4715
+I20260603 20:44:30.441969   185 timer.h:53] func <Proc Lidar> timer: 297.273 ms
+I20260603 20:44:30.442687   185 laser_mapping.cc:382] get cloud at 1725172723, latest imu: 1725172724.0762
+[0;31mE20260603 20:44:30.446815   185 imu_processing.hpp:223] get abnormal dt: 0.586353
+[mI20260603 20:44:31.026053   185 laser_mapping.cc:288] delta norm: 0.0175368, 2.77548
+I20260603 20:44:31.027029   185 laser_mapping.cc:300] [ mapping ]: In num: 14227 down 6482 Map grid num: 3531 effect num : 5326
+I20260603 20:44:31.132167   185 timer.h:53] func <Proc Lidar> timer: 689.475 ms
+I20260603 20:44:31.132709   185 laser_mapping.cc:382] get cloud at 1725172723.8, latest imu: 1725172724.8412
+[0;31mE20260603 20:44:31.135381   185 imu_processing.hpp:223] get abnormal dt: 0.546255
+[m[0;31mE20260603 20:44:31.135892   185 laser_mapping.cc:233] 检测到雷达断流，时长：0.799961
+[mI20260603 20:44:31.373526   185 laser_mapping.cc:288] delta norm: 0.043462, 1.92686
+I20260603 20:44:31.374326   185 laser_mapping.cc:300] [ mapping ]: In num: 8974 down 4345 Map grid num: 3661 effect num : 3221
+I20260603 20:44:31.422596   185 timer.h:53] func <Proc Lidar> timer: 289.882 ms
+I20260603 20:44:31.423650   185 laser_mapping.cc:382] get cloud at 1725172724, latest imu: 1725172725.1662
+[0;31mE20260603 20:44:31.428853   185 imu_processing.hpp:223] get abnormal dt: 0.17636
+[mI20260603 20:44:31.960868   185 laser_mapping.cc:288] delta norm: 0.129622, 0.473498
+I20260603 20:44:31.961705   185 laser_mapping.cc:300] [ mapping ]: In num: 13452 down 5670 Map grid num: 3701 effect num : 5144
+I20260603 20:44:32.056500   185 timer.h:53] func <Proc Lidar> timer: 632.854 ms
+I20260603 20:44:32.057117   185 laser_mapping.cc:382] get cloud at 1725172724.9, latest imu: 1725172725.8712
+[0;31mE20260603 20:44:32.060002   185 imu_processing.hpp:223] get abnormal dt: 0.641308
+[m[0;31mE20260603 20:44:32.060562   185 laser_mapping.cc:233] 检测到雷达断流，时长：0.899984
+[mI20260603 20:44:32.373875   185 laser_mapping.cc:288] delta norm: 0.155373, 2.70598
+I20260603 20:44:32.374517   185 laser_mapping.cc:300] [ mapping ]: In num: 9475 down 4534 Map grid num: 3727 effect num : 4200
+I20260603 20:44:32.446957   185 timer.h:53] func <Proc Lidar> timer: 389.835 ms
+I20260603 20:44:32.447527   185 laser_mapping.cc:382] get cloud at 1725172725.3, latest imu: 1725172726.3012
+[0;31mE20260603 20:44:32.450281   185 imu_processing.hpp:223] get abnormal dt: 0.166291
+[mI20260603 20:44:32.807372   185 laser_mapping.cc:288] delta norm: 0.157283, 4.01238
+I20260603 20:44:32.808007   185 laser_mapping.cc:300] [ mapping ]: In num: 9691 down 4494 Map grid num: 3741 effect num : 4243
+I20260603 20:44:32.808035   185 laser_mapping.cc:354] LIO: create kf 5, state: 0.448242  5.02089  1.06993, kf opt pose:   2.56832   4.43564 -0.306298, lio pose: 0.448242  5.02089  1.06993
+I20260603 20:44:32.877609   187 loop_closing.cc:111] skip because last loop kf: 0
+I20260603 20:44:32.877650   187 loop_closing.cc:84] lc: get kf 5 candi: 0
+I20260603 20:44:32.877609   185 timer.h:53] func <Proc Lidar> timer: 430.072 ms
+I20260603 20:44:32.878149   185 laser_mapping.cc:382] get cloud at 1725172725.8, latest imu: 1725172726.7812
+I20260603 20:44:32.878232   187 loop_closing.cc:336] loop outliers: 0/0
+I20260603 20:44:32.878243   187 loop_closing.cc:349] optimize finished, loops: 0
+[0;31mE20260603 20:44:32.880882   185 imu_processing.hpp:223] get abnormal dt: 0.471337
+[m[0;31mE20260603 20:44:32.881407   185 laser_mapping.cc:233] 检测到雷达断流，时长：0.500006
+[mI20260603 20:44:33.216637   185 laser_mapping.cc:288] delta norm: 0.0845603, 0.628846
+I20260603 20:44:33.217224   185 laser_mapping.cc:300] [ mapping ]: In num: 9281 down 4245 Map grid num: 3756 effect num : 3990
+I20260603 20:44:33.279920   185 timer.h:53] func <Proc Lidar> timer: 401.765 ms
+I20260603 20:44:33.280449   185 laser_mapping.cc:382] get cloud at 1725172726.2, latest imu: 1725172727.2312
+I20260603 20:44:33.478747   185 laser_mapping.cc:288] delta norm: 0.00692026, 0.0460069
+I20260603 20:44:33.479265   185 laser_mapping.cc:300] [ mapping ]: In num: 9281 down 4245 Map grid num: 3758 effect num : 4039
+I20260603 20:44:33.542431   185 timer.h:53] func <Proc Lidar> timer: 261.977 ms
+I20260603 20:44:33.542968   185 laser_mapping.cc:382] get cloud at 1725172726.5, latest imu: 1725172727.5212
+[0;31mE20260603 20:44:33.545707   185 imu_processing.hpp:223] get abnormal dt: 0.401276
+[mI20260603 20:44:33.750811   185 laser_mapping.cc:288] delta norm: 0.0844354, 1.13397
+I20260603 20:44:33.751634   185 laser_mapping.cc:300] [ mapping ]: In num: 9819 down 4304 Map grid num: 3936 effect num : 3004
+I20260603 20:44:33.790795   185 timer.h:53] func <Proc Lidar> timer: 247.818 ms
+I20260603 20:44:33.791333   185 laser_mapping.cc:382] get cloud at 1725172726.8, latest imu: 1725172727.7961
+[0;31mE20260603 20:44:33.793990   185 imu_processing.hpp:223] get abnormal dt: 0.181304
+[mI20260603 20:44:34.072427   185 laser_mapping.cc:288] delta norm: 0.294433, 0.409796
+I20260603 20:44:34.073072   185 laser_mapping.cc:300] [ mapping ]: In num: 9140 down 4067 Map grid num: 3967 effect num : 3811
+I20260603 20:44:34.127347   185 timer.h:53] func <Proc Lidar> timer: 336.011 ms
+I20260603 20:44:34.127946   185 laser_mapping.cc:382] get cloud at 1725172727.2, latest imu: 1725172728.1711
+[0;31mE20260603 20:44:34.130921   185 imu_processing.hpp:223] get abnormal dt: 0.331242
+[mI20260603 20:44:34.365634   185 laser_mapping.cc:288] delta norm: 0.0411384, 1.95306
+I20260603 20:44:34.366235   185 laser_mapping.cc:300] [ mapping ]: In num: 9633 down 4224 Map grid num: 3988 effect num : 3951
+I20260603 20:44:34.426681   185 timer.h:53] func <Proc Lidar> timer: 298.733 ms
+I20260603 20:44:34.427266   185 laser_mapping.cc:382] get cloud at 1725172727.5, latest imu: 1725172728.5011
+[0;31mE20260603 20:44:34.429934   185 imu_processing.hpp:223] get abnormal dt: 0.221178
+[mI20260603 20:44:34.779808   185 laser_mapping.cc:288] delta norm: 0.0270395, 0.911408
+I20260603 20:44:34.780419   185 laser_mapping.cc:300] [ mapping ]: In num: 9542 down 4310 Map grid num: 4005 effect num : 4064
+I20260603 20:44:34.843412   185 timer.h:53] func <Proc Lidar> timer: 416.135 ms
+I20260603 20:44:34.844314   185 laser_mapping.cc:382] get cloud at 1725172727.9, latest imu: 1725172728.9661
+[0;31mE20260603 20:44:34.847505   185 imu_processing.hpp:223] get abnormal dt: 0.196219
+[mI20260603 20:44:35.183310   185 laser_mapping.cc:288] delta norm: 0.133865, 1.58702
+I20260603 20:44:35.183930   185 laser_mapping.cc:300] [ mapping ]: In num: 9343 down 4242 Map grid num: 4024 effect num : 4020
+I20260603 20:44:35.246124   185 timer.h:53] func <Proc Lidar> timer: 401.806 ms
+I20260603 20:44:35.246628   185 laser_mapping.cc:382] get cloud at 1725172728.4, latest imu: 1725172729.4161
+[0;31mE20260603 20:44:35.249271   185 imu_processing.hpp:223] get abnormal dt: 0.171247
+[m[0;31mE20260603 20:44:35.249866   185 laser_mapping.cc:233] 检测到雷达断流，时长：0.500006
+[mI20260603 20:44:35.585311   185 laser_mapping.cc:288] delta norm: 0.0615322, 1.76734
+I20260603 20:44:35.585903   185 laser_mapping.cc:300] [ mapping ]: In num: 9234 down 4194 Map grid num: 4053 effect num : 3961
+I20260603 20:44:35.646723   185 timer.h:53] func <Proc Lidar> timer: 400.091 ms
+I20260603 20:44:35.647228   185 laser_mapping.cc:382] get cloud at 1725172728.8, latest imu: 1725172729.8611
+I20260603 20:44:35.935005   185 laser_mapping.cc:288] delta norm: 0.0684883, 2.89016
+I20260603 20:44:35.935550   185 laser_mapping.cc:300] [ mapping ]: In num: 8517 down 3900 Map grid num: 4073 effect num : 3658
+I20260603 20:44:35.988282   185 timer.h:53] func <Proc Lidar> timer: 341.05 ms
+I20260603 20:44:35.988796   185 laser_mapping.cc:382] get cloud at 1725172729.2, latest imu: 1725172730.2361
+I20260603 20:44:36.303977   185 laser_mapping.cc:288] delta norm: 0.071118, 2.68514
+I20260603 20:44:36.304581   185 laser_mapping.cc:300] [ mapping ]: In num: 8835 down 4105 Map grid num: 4102 effect num : 3864
+I20260603 20:44:36.361364   185 timer.h:53] func <Proc Lidar> timer: 372.561 ms
+I20260603 20:44:36.361882   185 laser_mapping.cc:382] get cloud at 1725172729.6, latest imu: 1725172730.6511
+[0;31mE20260603 20:44:36.364490   185 imu_processing.hpp:223] get abnormal dt: 0.116263
+[mI20260603 20:44:36.658231   185 laser_mapping.cc:288] delta norm: 0.262799, 1.96872
+I20260603 20:44:36.658814   185 laser_mapping.cc:300] [ mapping ]: In num: 8601 down 4058 Map grid num: 4124 effect num : 3824
+I20260603 20:44:36.715186   185 timer.h:53] func <Proc Lidar> timer: 353.299 ms
+I20260603 20:44:36.715495   185 laser_mapping.cc:382] get cloud at 1725172730, latest imu: 1725172731.0461
+[0;31mE20260603 20:44:36.716687   185 imu_processing.hpp:223] get abnormal dt: 0.161155
+[mI20260603 20:44:36.741586   185 laser_mapping.cc:288] delta norm: 0.0724168, 0.467282
+I20260603 20:44:36.741793   185 laser_mapping.cc:300] [ mapping ]: In num: 3089 down 1428 Map grid num: 4138 effect num : 1366
+I20260603 20:44:36.750662   185 timer.h:53] func <Proc Lidar> timer: 35.1619 ms
+[0;31mE20260603 20:44:36.751314   185 laser_mapping.cc:377] lidar loop back, clear buffer
+[m[0;31mE20260603 20:44:36.751353   185 laser_mapping.cc:379] lidar loop back, dt: -7.08103e-05
+[m[0;33mW20260603 20:44:36.751369   185 laser_mapping.cc:185] sync package failed
+[mI20260603 20:44:36.751420   185 timer.h:53] func <Proc Lidar> timer: 0.106838 ms
+I20260603 20:44:36.751838   185 laser_mapping.cc:382] get cloud at 1725172730.2, latest imu: 1725172731.091
+[0;31mE20260603 20:44:36.754369   185 imu_processing.hpp:223] get abnormal dt: 0.136132
+[mI20260603 20:44:36.968034   185 laser_mapping.cc:288] delta norm: 0.0942911, 4.98349
+I20260603 20:44:36.968663   185 laser_mapping.cc:300] [ mapping ]: In num: 7762 down 3796 Map grid num: 4209 effect num : 3406
+I20260603 20:44:36.968727   185 laser_mapping.cc:354] LIO: create kf 6, state: 1.31262 6.52793 1.17162, kf opt pose:  3.25697  5.79678 0.821985, lio pose: 1.31262 6.52793 1.17162
+I20260603 20:44:37.007542   187 loop_closing.cc:111] skip because last loop kf: 0
+I20260603 20:44:37.007534   185 timer.h:53] func <Proc Lidar> timer: 255.69 ms
+I20260603 20:44:37.007586   187 loop_closing.cc:84] lc: get kf 6 candi: 0
+I20260603 20:44:37.008061   185 laser_mapping.cc:382] get cloud at 1725172730.4, latest imu: 1725172731.371
+I20260603 20:44:37.009141   187 loop_closing.cc:336] loop outliers: 0/0
+I20260603 20:44:37.009164   187 loop_closing.cc:349] optimize finished, loops: 0
+I20260603 20:44:37.283041   185 laser_mapping.cc:288] delta norm: 0.00846512, 0.171202
+I20260603 20:44:37.283566   185 laser_mapping.cc:300] [ mapping ]: In num: 7762 down 3796 Map grid num: 4210 effect num : 3568
+I20260603 20:44:37.331436   185 timer.h:53] func <Proc Lidar> timer: 323.369 ms
+I20260603 20:44:37.331923   185 laser_mapping.cc:382] get cloud at 1725172730.7, latest imu: 1725172731.731
+[0;31mE20260603 20:44:37.334430   185 imu_processing.hpp:223] get abnormal dt: 0.351169
+[mI20260603 20:44:37.568400   185 laser_mapping.cc:288] delta norm: 0.163815, 1.46978
+I20260603 20:44:37.568972   185 laser_mapping.cc:300] [ mapping ]: In num: 7860 down 3836 Map grid num: 4236 effect num : 3571
+I20260603 20:44:37.617571   185 timer.h:53] func <Proc Lidar> timer: 285.643 ms
+I20260603 20:44:37.617867   185 laser_mapping.cc:382] get cloud at 1725172731, latest imu: 1725172732.051
+[0;31mE20260603 20:44:37.619021   185 imu_processing.hpp:223] get abnormal dt: 0.246191
+[mI20260603 20:44:37.646538   185 laser_mapping.cc:288] delta norm: 0.0115863, 0.321831
+I20260603 20:44:37.646764   185 laser_mapping.cc:300] [ mapping ]: In num: 3376 down 1631 Map grid num: 4245 effect num : 1553
+I20260603 20:44:37.655148   185 timer.h:53] func <Proc Lidar> timer: 37.2761 ms
+[0;31mE20260603 20:44:37.655784   185 laser_mapping.cc:377] lidar loop back, clear buffer
+[m[0;31mE20260603 20:44:37.655826   185 laser_mapping.cc:379] lidar loop back, dt: -6.10352e-05
+[m[0;33mW20260603 20:44:37.655841   185 laser_mapping.cc:185] sync package failed
+[mI20260603 20:44:37.655893   185 timer.h:53] func <Proc Lidar> timer: 0.110775 ms
+I20260603 20:44:37.656315   185 laser_mapping.cc:382] get cloud at 1725172731.2, latest imu: 1725172732.0959
+I20260603 20:44:37.671442   185 laser_mapping.cc:288] delta norm: 0.00470098, 0.0176044
+I20260603 20:44:37.671638   185 laser_mapping.cc:300] [ mapping ]: In num: 3376 down 1631 Map grid num: 4245 effect num : 1567
+I20260603 20:44:37.673866   185 timer.h:53] func <Proc Lidar> timer: 17.5413 ms
+I20260603 20:44:37.674343   185 laser_mapping.cc:382] get cloud at 1725172731.2999, latest imu: 1725172732.1109
+[0;31mE20260603 20:44:37.676894   185 imu_processing.hpp:223] get abnormal dt: 0.271052
+[mI20260603 20:44:37.975669   185 laser_mapping.cc:288] delta norm: 0.0349045, 1.65311
+I20260603 20:44:37.976238   185 laser_mapping.cc:300] [ mapping ]: In num: 7966 down 3978 Map grid num: 4264 effect num : 3776
+I20260603 20:44:38.024478   185 timer.h:53] func <Proc Lidar> timer: 350.128 ms
+I20260603 20:44:38.024963   185 laser_mapping.cc:382] get cloud at 1725172731.4999, latest imu: 1725172732.5009
+I20260603 20:44:38.270905   185 laser_mapping.cc:288] delta norm: 0.00375087, 0.0305173
+I20260603 20:44:38.271410   185 laser_mapping.cc:300] [ mapping ]: In num: 7966 down 3978 Map grid num: 4264 effect num : 3775
+I20260603 20:44:38.325016   185 timer.h:53] func <Proc Lidar> timer: 300.049 ms
+I20260603 20:44:38.325505   185 laser_mapping.cc:382] get cloud at 1725172731.8, latest imu: 1725172732.836
+[0;31mE20260603 20:44:38.327927   185 imu_processing.hpp:223] get abnormal dt: 0.331205
+[mI20260603 20:44:38.578558   185 laser_mapping.cc:288] delta norm: 0.0363974, 3.74355
+I20260603 20:44:38.579075   185 laser_mapping.cc:300] [ mapping ]: In num: 7238 down 3609 Map grid num: 4296 effect num : 3399
+I20260603 20:44:38.625564   185 timer.h:53] func <Proc Lidar> timer: 300.053 ms
+I20260603 20:44:38.626168   185 laser_mapping.cc:382] get cloud at 1725172732.1999, latest imu: 1725172733.1709
+[0;31mE20260603 20:44:38.628935   185 imu_processing.hpp:223] get abnormal dt: 0.150988
+[mI20260603 20:44:38.908877   185 laser_mapping.cc:288] delta norm: 0.0742078, 2.50283
+I20260603 20:44:38.909447   185 laser_mapping.cc:300] [ mapping ]: In num: 7590 down 3858 Map grid num: 4326 effect num : 3620
+I20260603 20:44:38.959131   185 timer.h:53] func <Proc Lidar> timer: 332.961 ms
+I20260603 20:44:38.959602   185 laser_mapping.cc:382] get cloud at 1725172732.5, latest imu: 1725172733.5409
+[0;31mE20260603 20:44:38.962082   185 imu_processing.hpp:223] get abnormal dt: 0.20097
+[mI20260603 20:44:39.125186   185 laser_mapping.cc:288] delta norm: 0.0681426, 4.57095
+I20260603 20:44:39.125875   185 laser_mapping.cc:300] [ mapping ]: In num: 7431 down 3763 Map grid num: 4444 effect num : 3072
+I20260603 20:44:39.164211   185 timer.h:53] func <Proc Lidar> timer: 204.604 ms
+I20260603 20:44:39.164696   185 laser_mapping.cc:382] get cloud at 1725172732.7, latest imu: 1725172733.766
+I20260603 20:44:39.341816   185 laser_mapping.cc:288] delta norm: 0.00396971, 0.0949559
+I20260603 20:44:39.342324   185 laser_mapping.cc:300] [ mapping ]: In num: 7431 down 3763 Map grid num: 4447 effect num : 3533
+I20260603 20:44:39.388708   185 timer.h:53] func <Proc Lidar> timer: 224.006 ms
+I20260603 20:44:39.389052   185 laser_mapping.cc:382] get cloud at 1725172733, latest imu: 1725172734.016
+[0;31mE20260603 20:44:39.390208   185 imu_processing.hpp:223] get abnormal dt: 0.236013
+[mI20260603 20:44:39.400578   185 laser_mapping.cc:288] delta norm: 0.154801, 2.81801
+I20260603 20:44:39.400671   185 laser_mapping.cc:300] [ mapping ]: In num: 3533 down 379 Map grid num: 4469 effect num : 340
+I20260603 20:44:39.407007   185 timer.h:53] func <Proc Lidar> timer: 17.9508 ms
+[0;31mE20260603 20:44:39.407640   185 laser_mapping.cc:377] lidar loop back, clear buffer
+[m[0;31mE20260603 20:44:39.407681   185 laser_mapping.cc:379] lidar loop back, dt: -5.57899e-05
+[m[0;33mW20260603 20:44:39.407697   185 laser_mapping.cc:185] sync package failed
+[mI20260603 20:44:39.407756   185 timer.h:53] func <Proc Lidar> timer: 0.120225 ms
+I20260603 20:44:39.408170   185 laser_mapping.cc:382] get cloud at 1725172733.2, latest imu: 1725172734.041
+I20260603 20:44:39.659734   185 laser_mapping.cc:288] delta norm: 0.101305, 0.837476
+I20260603 20:44:39.660322   185 laser_mapping.cc:300] [ mapping ]: In num: 6911 down 3677 Map grid num: 4487 effect num : 3435
+I20260603 20:44:39.699394   185 timer.h:53] func <Proc Lidar> timer: 291.216 ms
+I20260603 20:44:39.699874   185 laser_mapping.cc:382] get cloud at 1725172733.3, latest imu: 1725172734.361
+I20260603 20:44:39.855767   185 laser_mapping.cc:288] delta norm: 0.00401237, 0.0567962
+I20260603 20:44:39.856281   185 laser_mapping.cc:300] [ mapping ]: In num: 6911 down 3677 Map grid num: 4487 effect num : 3431
+I20260603 20:44:39.902153   185 timer.h:53] func <Proc Lidar> timer: 202.271 ms
+I20260603 20:44:39.902637   185 laser_mapping.cc:382] get cloud at 1725172733.6, latest imu: 1725172734.586
+[0;31mE20260603 20:44:39.905001   185 imu_processing.hpp:223] get abnormal dt: 0.241013
+[mI20260603 20:44:40.134012   185 laser_mapping.cc:288] delta norm: 0.166322, 1.79966
+I20260603 20:44:40.134548   185 laser_mapping.cc:300] [ mapping ]: In num: 6521 down 3462 Map grid num: 4501 effect num : 3252
+I20260603 20:44:40.176988   185 timer.h:53] func <Proc Lidar> timer: 274.346 ms
+I20260603 20:44:40.177475   185 laser_mapping.cc:382] get cloud at 1725172733.9, latest imu: 1725172734.8909
+I20260603 20:44:40.434294   185 laser_mapping.cc:288] delta norm: 0.0475738, 1.67434
+I20260603 20:44:40.434830   185 laser_mapping.cc:300] [ mapping ]: In num: 6580 down 3619 Map grid num: 4516 effect num : 3434
+I20260603 20:44:40.480192   185 timer.h:53] func <Proc Lidar> timer: 302.711 ms
+I20260603 20:44:40.480688   185 laser_mapping.cc:382] get cloud at 1725172734.2, latest imu: 1725172735.2309
+I20260603 20:44:40.706759   185 laser_mapping.cc:288] delta norm: 0.462948, 1.04049
+I20260603 20:44:40.707361   185 laser_mapping.cc:300] [ mapping ]: In num: 6657 down 3629 Map grid num: 4529 effect num : 3415
+I20260603 20:44:40.752555   185 timer.h:53] func <Proc Lidar> timer: 271.859 ms
+I20260603 20:44:40.753036   185 laser_mapping.cc:382] get cloud at 1725172734.5, latest imu: 1725172735.5309
+[0;31mE20260603 20:44:40.755537   185 imu_processing.hpp:223] get abnormal dt: 0.224999
+[mI20260603 20:44:41.001935   185 laser_mapping.cc:288] delta norm: 0.0805963, 1.28903
+I20260603 20:44:41.002463   185 laser_mapping.cc:300] [ mapping ]: In num: 6694 down 3585 Map grid num: 4535 effect num : 3360
+I20260603 20:44:41.046322   185 timer.h:53] func <Proc Lidar> timer: 293.281 ms
+I20260603 20:44:41.046797   185 laser_mapping.cc:382] get cloud at 1725172734.8, latest imu: 1725172735.8559
+[0;31mE20260603 20:44:41.049170   185 imu_processing.hpp:223] get abnormal dt: 0.290976
+[mI20260603 20:44:41.257652   185 laser_mapping.cc:288] delta norm: 0.0381291, 1.91924
+I20260603 20:44:41.258149   185 laser_mapping.cc:300] [ mapping ]: In num: 6141 down 3256 Map grid num: 4541 effect num : 3078
+I20260603 20:44:41.295565   185 timer.h:53] func <Proc Lidar> timer: 248.763 ms
+I20260603 20:44:41.296029   185 laser_mapping.cc:382] get cloud at 1725172735.0999, latest imu: 1725172736.1359
+I20260603 20:44:41.437939   185 laser_mapping.cc:288] delta norm: 0.00710195, 0.0245281
+I20260603 20:44:41.438364   185 laser_mapping.cc:300] [ mapping ]: In num: 6141 down 3256 Map grid num: 4542 effect num : 3097
+I20260603 20:44:41.475296   185 timer.h:53] func <Proc Lidar> timer: 179.262 ms
+I20260603 20:44:41.475798   185 laser_mapping.cc:382] get cloud at 1725172735.3, latest imu: 1725172736.3359
+[0;31mE20260603 20:44:41.478307   185 imu_processing.hpp:223] get abnormal dt: 0.330986
+[mI20260603 20:44:41.685427   185 laser_mapping.cc:288] delta norm: 0.255185, 1.40896
+I20260603 20:44:41.686107   185 laser_mapping.cc:300] [ mapping ]: In num: 6437 down 3504 Map grid num: 4608 effect num : 3125
+I20260603 20:44:41.724141   185 timer.h:53] func <Proc Lidar> timer: 248.337 ms
+I20260603 20:44:41.724682   185 laser_mapping.cc:382] get cloud at 1725172735.6, latest imu: 1725172736.6109
+[0;31mE20260603 20:44:41.727191   185 imu_processing.hpp:223] get abnormal dt: 0.130994
+[mI20260603 20:44:41.979451   185 laser_mapping.cc:288] delta norm: 0.141155, 0.999877
+I20260603 20:44:41.980051   185 laser_mapping.cc:300] [ mapping ]: In num: 6981 down 3733 Map grid num: 4650 effect num : 3419
+I20260603 20:44:42.024403   185 timer.h:53] func <Proc Lidar> timer: 299.717 ms
+I20260603 20:44:42.024897   185 laser_mapping.cc:382] get cloud at 1725172735.9, latest imu: 1725172736.9459
+[0;31mE20260603 20:44:42.027462   185 imu_processing.hpp:223] get abnormal dt: 0.156018
+[mI20260603 20:44:42.300482   185 laser_mapping.cc:288] delta norm: 0.0378635, 1.0492
+I20260603 20:44:42.301083   185 laser_mapping.cc:300] [ mapping ]: In num: 7252 down 3850 Map grid num: 4681 effect num : 3571
+I20260603 20:44:42.349884   185 timer.h:53] func <Proc Lidar> timer: 324.981 ms
+I20260603 20:44:42.350401   185 laser_mapping.cc:382] get cloud at 1725172736.3, latest imu: 1725172737.3059
+[0;31mE20260603 20:44:42.353009   185 imu_processing.hpp:223] get abnormal dt: 0.135971
+[mI20260603 20:44:42.656319   185 laser_mapping.cc:288] delta norm: 0.10498, 0.197814
+I20260603 20:44:42.656975   185 laser_mapping.cc:300] [ mapping ]: In num: 7791 down 4109 Map grid num: 4710 effect num : 3790
+I20260603 20:44:42.711619   185 timer.h:53] func <Proc Lidar> timer: 361.213 ms
+I20260603 20:44:42.712117   185 laser_mapping.cc:382] get cloud at 1725172736.7, latest imu: 1725172737.7109
+[0;31mE20260603 20:44:42.714622   185 imu_processing.hpp:223] get abnormal dt: 0.210963
+[mI20260603 20:44:43.029227   185 laser_mapping.cc:288] delta norm: 0.0179303, 0.506021
+I20260603 20:44:43.029896   185 laser_mapping.cc:300] [ mapping ]: In num: 7885 down 4223 Map grid num: 4737 effect num : 3853
+I20260603 20:44:43.086972   185 timer.h:53] func <Proc Lidar> timer: 374.847 ms
+I20260603 20:44:43.087657   185 laser_mapping.cc:382] get cloud at 1725172737, latest imu: 1725172738.1259
+[0;31mE20260603 20:44:43.091418   185 imu_processing.hpp:223] get abnormal dt: 0.145982
+[mI20260603 20:44:43.552614   185 laser_mapping.cc:288] delta norm: 0.331183, 0.352632
+I20260603 20:44:43.553357   185 laser_mapping.cc:300] [ mapping ]: In num: 11651 down 5139 Map grid num: 4761 effect num : 4794
+I20260603 20:44:43.637986   185 timer.h:53] func <Proc Lidar> timer: 550.321 ms
+I20260603 20:44:43.638500   185 laser_mapping.cc:382] get cloud at 1725172737.7, latest imu: 1725172738.7359
+[0;31mE20260603 20:44:43.640967   185 imu_processing.hpp:223] get abnormal dt: 0.10591
+[m[0;31mE20260603 20:44:43.641374   185 laser_mapping.cc:233] 检测到雷达断流，时长：0.699991
+[mI20260603 20:44:43.941650   185 laser_mapping.cc:288] delta norm: 0.081895, 0.667032
+I20260603 20:44:43.942226   185 laser_mapping.cc:300] [ mapping ]: In num: 7473 down 3990 Map grid num: 4777 effect num : 3755
+I20260603 20:44:44.000771   185 timer.h:53] func <Proc Lidar> timer: 362.265 ms
+I20260603 20:44:44.001427   185 laser_mapping.cc:382] get cloud at 1725172738, latest imu: 1725172739.1408
+[0;31mE20260603 20:44:44.005004   185 imu_processing.hpp:223] get abnormal dt: 0.326033
+[mI20260603 20:44:44.405618   185 laser_mapping.cc:288] delta norm: 0.0111553, 0.332511
+I20260603 20:44:44.406284   185 laser_mapping.cc:300] [ mapping ]: In num: 10728 down 4683 Map grid num: 4789 effect num : 4393
+I20260603 20:44:44.406311   185 laser_mapping.cc:354] LIO: create kf 7, state: 2.70858 8.03561 1.20636, kf opt pose: 3.71741 6.99104 1.12975, lio pose: 2.70858 8.03561 1.20636
+I20260603 20:44:44.477560   187 loop_closing.cc:111] skip because last loop kf: 0
+I20260603 20:44:44.477605   187 loop_closing.cc:84] lc: get kf 7 candi: 0
+I20260603 20:44:44.477558   185 timer.h:53] func <Proc Lidar> timer: 476.123 ms
+I20260603 20:44:44.478080   185 laser_mapping.cc:382] get cloud at 1725172738.7, latest imu: 1725172739.6708
+I20260603 20:44:44.478797   187 loop_closing.cc:336] loop outliers: 0/0
+I20260603 20:44:44.478822   187 loop_closing.cc:349] optimize finished, loops: 0
+[0;31mE20260603 20:44:44.480520   185 imu_processing.hpp:223] get abnormal dt: 0.535892
+[m[0;31mE20260603 20:44:44.480959   185 laser_mapping.cc:233] 检测到雷达断流，时长：0.699989
+[mI20260603 20:44:44.689567   185 laser_mapping.cc:288] delta norm: 0.0375293, 0.576092
+I20260603 20:44:44.690061   185 laser_mapping.cc:300] [ mapping ]: In num: 6620 down 3299 Map grid num: 4793 effect num : 3034
+I20260603 20:44:44.730010   185 timer.h:53] func <Proc Lidar> timer: 251.925 ms
+I20260603 20:44:44.730552   185 laser_mapping.cc:382] get cloud at 1725172738.9, latest imu: 1725172739.9508
+I20260603 20:44:44.937630   185 laser_mapping.cc:288] delta norm: 0.00427539, 0.0165096
+I20260603 20:44:44.938072   185 laser_mapping.cc:300] [ mapping ]: In num: 6620 down 3299 Map grid num: 4795 effect num : 3053
+I20260603 20:44:44.974105   185 timer.h:53] func <Proc Lidar> timer: 243.546 ms
+I20260603 20:44:44.974617   185 laser_mapping.cc:382] get cloud at 1725172739.2, latest imu: 1725172740.2208
+[0;31mE20260603 20:44:44.977068   185 imu_processing.hpp:223] get abnormal dt: 0.340987
+[mI20260603 20:44:45.193516   185 laser_mapping.cc:288] delta norm: 0.232207, 1.27219
+I20260603 20:44:45.194226   185 laser_mapping.cc:300] [ mapping ]: In num: 6628 down 3383 Map grid num: 4806 effect num : 3180
+I20260603 20:44:45.233307   185 timer.h:53] func <Proc Lidar> timer: 258.68 ms
+I20260603 20:44:45.233796   185 laser_mapping.cc:382] get cloud at 1725172739.5, latest imu: 1725172740.5108
+I20260603 20:44:45.459648   185 laser_mapping.cc:288] delta norm: 0.017489, 0.0138629
+I20260603 20:44:45.460109   185 laser_mapping.cc:300] [ mapping ]: In num: 6628 down 3383 Map grid num: 4806 effect num : 3210
+I20260603 20:44:45.500540   185 timer.h:53] func <Proc Lidar> timer: 266.729 ms
+I20260603 20:44:45.501036   185 laser_mapping.cc:382] get cloud at 1725172739.7999, latest imu: 1725172740.8058
+[0;31mE20260603 20:44:45.503374   185 imu_processing.hpp:223] get abnormal dt: 0.370841
+[mI20260603 20:44:45.737502   185 laser_mapping.cc:288] delta norm: 0.398478, 1.7488
+I20260603 20:44:45.738098   185 laser_mapping.cc:300] [ mapping ]: In num: 6816 down 3617 Map grid num: 4817 effect num : 3383
+I20260603 20:44:45.781970   185 timer.h:53] func <Proc Lidar> timer: 280.929 ms
+I20260603 20:44:45.782611   185 laser_mapping.cc:382] get cloud at 1725172740, latest imu: 1725172741.1208
+I20260603 20:44:46.246902   185 laser_mapping.cc:288] delta norm: 0.139578, 0.296833
+I20260603 20:44:46.247603   185 laser_mapping.cc:300] [ mapping ]: In num: 11406 down 5044 Map grid num: 4820 effect num : 4758
+I20260603 20:44:46.329418   185 timer.h:53] func <Proc Lidar> timer: 546.801 ms
+I20260603 20:44:46.329901   185 laser_mapping.cc:382] get cloud at 1725172740.7, latest imu: 1725172741.7308
+[0;31mE20260603 20:44:46.332422   185 imu_processing.hpp:223] get abnormal dt: 0.289957
+[m[0;31mE20260603 20:44:46.333828   185 laser_mapping.cc:233] 检测到雷达断流，时长：0.700026
+[mI20260603 20:44:46.656934   185 laser_mapping.cc:288] delta norm: 0.12253, 0.345526
+I20260603 20:44:46.657510   185 laser_mapping.cc:300] [ mapping ]: In num: 7768 down 4098 Map grid num: 4825 effect num : 3886
+I20260603 20:44:46.719157   185 timer.h:53] func <Proc Lidar> timer: 389.247 ms
+I20260603 20:44:46.719854   185 laser_mapping.cc:382] get cloud at 1725172741, latest imu: 1725172742.1607
+[0;31mE20260603 20:44:46.724082   185 imu_processing.hpp:223] get abnormal dt: 0.314993
+[mI20260603 20:44:47.269170   185 laser_mapping.cc:288] delta norm: 0.0938898, 0.908154
+I20260603 20:44:47.269964   185 laser_mapping.cc:300] [ mapping ]: In num: 11834 down 5565 Map grid num: 4828 effect num : 5174
+I20260603 20:44:47.367120   185 timer.h:53] func <Proc Lidar> timer: 647.261 ms
+I20260603 20:44:47.367660   185 laser_mapping.cc:382] get cloud at 1725172741.9, latest imu: 1725172742.8807
+[0;31mE20260603 20:44:47.370203   185 imu_processing.hpp:223] get abnormal dt: 0.530789
+[m[0;31mE20260603 20:44:47.370553   185 laser_mapping.cc:233] 检测到雷达断流，时长：0.899956
+[mI20260603 20:44:47.613492   185 laser_mapping.cc:288] delta norm: 0.117724, 0.739101
+I20260603 20:44:47.614001   185 laser_mapping.cc:300] [ mapping ]: In num: 6728 down 3493 Map grid num: 4833 effect num : 3304
+I20260603 20:44:47.663743   185 timer.h:53] func <Proc Lidar> timer: 296.078 ms
+I20260603 20:44:47.664261   185 laser_mapping.cc:382] get cloud at 1725172742.2, latest imu: 1725172743.2107
+[0;31mE20260603 20:44:47.666706   185 imu_processing.hpp:223] get abnormal dt: 0.160785
+[mI20260603 20:44:47.889212   185 laser_mapping.cc:288] delta norm: 0.0506037, 0.684414
+I20260603 20:44:47.889701   185 laser_mapping.cc:300] [ mapping ]: In num: 6187 down 3391 Map grid num: 4837 effect num : 3164
+I20260603 20:44:47.929260   185 timer.h:53] func <Proc Lidar> timer: 264.99 ms
+I20260603 20:44:47.929739   185 laser_mapping.cc:382] get cloud at 1725172742.5, latest imu: 1725172743.5057
+I20260603 20:44:48.034632   185 laser_mapping.cc:288] delta norm: 0.00165847, 0.0243236
+I20260603 20:44:48.035073   185 laser_mapping.cc:300] [ mapping ]: In num: 6187 down 3391 Map grid num: 4837 effect num : 3182
+I20260603 20:44:48.073822   185 timer.h:53] func <Proc Lidar> timer: 144.073 ms
+I20260603 20:44:48.074633   185 laser_mapping.cc:382] get cloud at 1725172742.6, latest imu: 1725172743.6657
+I20260603 20:44:48.167584   185 laser_mapping.cc:288] delta norm: 0.0007392, 0.00866075
+I20260603 20:44:48.168207   185 laser_mapping.cc:300] [ mapping ]: In num: 6187 down 3391 Map grid num: 4837 effect num : 3204
+I20260603 20:44:48.208026   185 timer.h:53] func <Proc Lidar> timer: 133.391 ms
+I20260603 20:44:48.208498   185 laser_mapping.cc:382] get cloud at 1725172742.8, latest imu: 1725172743.8157
+[0;31mE20260603 20:44:48.210841   185 imu_processing.hpp:223] get abnormal dt: 0.58076
+[mI20260603 20:44:48.393520   185 laser_mapping.cc:288] delta norm: 0.0775152, 0.196878
+I20260603 20:44:48.394059   185 laser_mapping.cc:300] [ mapping ]: In num: 5939 down 3154 Map grid num: 4861 effect num : 2863
+I20260603 20:44:48.426738   185 timer.h:53] func <Proc Lidar> timer: 218.234 ms
+I20260603 20:44:48.427096   185 laser_mapping.cc:382] get cloud at 1725172743, latest imu: 1725172744.0606
+I20260603 20:44:48.595008   185 laser_mapping.cc:288] delta norm: 0.0100296, 0.0306354
+I20260603 20:44:48.595470   185 laser_mapping.cc:300] [ mapping ]: In num: 5939 down 3154 Map grid num: 4864 effect num : 2956
+I20260603 20:44:48.629834   185 timer.h:53] func <Proc Lidar> timer: 202.734 ms
+I20260603 20:44:48.630331   185 laser_mapping.cc:382] get cloud at 1725172743.3, latest imu: 1725172744.2856
+[0;31mE20260603 20:44:48.632805   185 imu_processing.hpp:223] get abnormal dt: 0.31079
+[mI20260603 20:44:48.899140   185 laser_mapping.cc:288] delta norm: 0.136043, 1.29944
+I20260603 20:44:48.899686   185 laser_mapping.cc:300] [ mapping ]: In num: 7438 down 3765 Map grid num: 4864 effect num : 3535
+I20260603 20:44:48.899706   185 laser_mapping.cc:354] LIO: create kf 8, state: 1.08785 6.66703 1.17949, kf opt pose:   4.89561   4.96589 0.0662312, lio pose: 1.08785 6.66703 1.17949
+I20260603 20:44:48.945948   187 loop_closing.cc:111] skip because last loop kf: 0
+I20260603 20:44:48.945942   185 timer.h:53] func <Proc Lidar> timer: 315.604 ms
+I20260603 20:44:48.945989   187 loop_closing.cc:84] lc: get kf 8 candi: 0
+I20260603 20:44:48.946472   185 laser_mapping.cc:382] get cloud at 1725172743.5999, latest imu: 1725172744.6356
+I20260603 20:44:48.946671   187 loop_closing.cc:336] loop outliers: 0/0
+I20260603 20:44:48.946689   187 loop_closing.cc:349] optimize finished, loops: 0
+[0;31mE20260603 20:44:48.948984   185 imu_processing.hpp:223] get abnormal dt: 0.105735
+[mI20260603 20:44:49.216980   185 laser_mapping.cc:288] delta norm: 0.0314371, 1.27266
+I20260603 20:44:49.217729   185 laser_mapping.cc:300] [ mapping ]: In num: 8227 down 4065 Map grid num: 4953 effect num : 3515
+I20260603 20:44:49.266038   185 timer.h:53] func <Proc Lidar> timer: 319.56 ms
+I20260603 20:44:49.266371   185 laser_mapping.cc:382] get cloud at 1725172744.0001, latest imu: 1725172744.9906
+[0;31mE20260603 20:44:49.267665   185 imu_processing.hpp:223] get abnormal dt: 0.115864
+[mI20260603 20:44:49.290868   185 laser_mapping.cc:288] delta norm: 0.0238335, 1.18422
+I20260603 20:44:49.291133   185 laser_mapping.cc:300] [ mapping ]: In num: 4335 down 1579 Map grid num: 5018 effect num : 1180
+I20260603 20:44:49.298617   185 timer.h:53] func <Proc Lidar> timer: 32.2434 ms
+[0;31mE20260603 20:44:49.299320   185 laser_mapping.cc:377] lidar loop back, clear buffer
+[m[0;31mE20260603 20:44:49.299368   185 laser_mapping.cc:379] lidar loop back, dt: -0.000262976
+[m[0;33mW20260603 20:44:49.299386   185 laser_mapping.cc:185] sync package failed
+[mI20260603 20:44:49.299453   185 timer.h:53] func <Proc Lidar> timer: 0.135975 ms
+I20260603 20:44:49.299893   185 laser_mapping.cc:382] get cloud at 1725172744.1999, latest imu: 1725172745.0306
+[0;31mE20260603 20:44:49.302580   185 imu_processing.hpp:223] get abnormal dt: 0.185719
+[mI20260603 20:44:49.558547   185 laser_mapping.cc:288] delta norm: 0.0130697, 2.09071
+I20260603 20:44:49.559667   185 laser_mapping.cc:300] [ mapping ]: In num: 9410 down 4267 Map grid num: 5092 effect num : 3425
+I20260603 20:44:49.599056   185 timer.h:53] func <Proc Lidar> timer: 299.157 ms
+I20260603 20:44:49.599614   185 laser_mapping.cc:382] get cloud at 1725172744.2999, latest imu: 1725172745.3606
+I20260603 20:44:49.922554   185 laser_mapping.cc:288] delta norm: 0.00281064, 0.0334562
+I20260603 20:44:49.923163   185 laser_mapping.cc:300] [ mapping ]: In num: 9410 down 4267 Map grid num: 5092 effect num : 3870
+I20260603 20:44:49.979709   185 timer.h:53] func <Proc Lidar> timer: 380.09 ms
+I20260603 20:44:49.980022   185 laser_mapping.cc:382] get cloud at 1725172744.7998, latest imu: 1725172745.7856
+[0;31mE20260603 20:44:49.981237   185 imu_processing.hpp:223] get abnormal dt: 0.335831
+[mI20260603 20:44:50.004357   185 laser_mapping.cc:288] delta norm: 0.133071, 1.57445
+I20260603 20:44:50.004587   185 laser_mapping.cc:300] [ mapping ]: In num: 3524 down 1427 Map grid num: 5108 effect num : 1165
+I20260603 20:44:50.013202   185 timer.h:53] func <Proc Lidar> timer: 33.175 ms
+I20260603 20:44:50.013949   185 laser_mapping.cc:382] get cloud at 1725172744.8999, latest imu: 1725172745.8206
+[0;31mE20260603 20:44:50.018229   185 imu_processing.hpp:223] get abnormal dt: 0.100867
+[mI20260603 20:44:50.609360   185 laser_mapping.cc:288] delta norm: 0.242784, 3.15723
+I20260603 20:44:50.610354   185 laser_mapping.cc:300] [ mapping ]: In num: 15251 down 6549 Map grid num: 5160 effect num : 5529
+I20260603 20:44:50.712842   185 timer.h:53] func <Proc Lidar> timer: 698.887 ms
+I20260603 20:44:50.713158   185 laser_mapping.cc:382] get cloud at 1725172745.6, latest imu: 1725172746.6006
+[0;31mE20260603 20:44:50.714545   185 imu_processing.hpp:223] get abnormal dt: 0.260653
+[m[0;31mE20260603 20:44:50.714731   185 laser_mapping.cc:233] 检测到雷达断流，时长：0.700027
+[mI20260603 20:44:50.759482   185 laser_mapping.cc:288] delta norm: 0.230237, 0.914307
+I20260603 20:44:50.759796   185 laser_mapping.cc:300] [ mapping ]: In num: 4919 down 2089 Map grid num: 5170 effect num : 1901
+I20260603 20:44:50.778257   185 timer.h:53] func <Proc Lidar> timer: 65.0924 ms
+I20260603 20:44:50.779029   185 laser_mapping.cc:382] get cloud at 1725172745.7, latest imu: 1725172746.6706
+I20260603 20:44:51.590381   185 laser_mapping.cc:288] delta norm: 0.123081, 1.69898
+I20260603 20:44:51.591338   185 laser_mapping.cc:300] [ mapping ]: In num: 15692 down 6946 Map grid num: 5180 effect num : 6380
+I20260603 20:44:51.730644   185 timer.h:53] func <Proc Lidar> timer: 951.611 ms
+I20260603 20:44:51.731395   185 laser_mapping.cc:382] get cloud at 1725172746.7, latest imu: 1725172747.7306
+[0;31mE20260603 20:44:51.737715   185 imu_processing.hpp:223] get abnormal dt: 0.700761
+[m[0;31mE20260603 20:44:51.738447   185 laser_mapping.cc:233] 检测到雷达断流，时长：0.999988
+[mI20260603 20:44:52.421115   185 laser_mapping.cc:288] delta norm: 0.260605, 0.219152
+I20260603 20:44:52.422016   185 laser_mapping.cc:300] [ mapping ]: In num: 15575 down 6383 Map grid num: 5203 effect num : 5905
+I20260603 20:44:52.422048   185 laser_mapping.cc:354] LIO: create kf 9, state: -0.600387   4.89836   1.06983, kf opt pose:   5.23457   2.54209 0.0952366, lio pose: -0.600387   4.89836   1.06983
+I20260603 20:44:52.559475   187 loop_closing.cc:111] skip because last loop kf: 0
+I20260603 20:44:52.559474   185 timer.h:53] func <Proc Lidar> timer: 828.07 ms
+I20260603 20:44:52.559527   187 loop_closing.cc:84] lc: get kf 9 candi: 0
+I20260603 20:44:52.559862   185 laser_mapping.cc:382] get cloud at 1725172747.6, latest imu: 1725172748.6506
+I20260603 20:44:52.560287   187 loop_closing.cc:336] loop outliers: 0/0
+I20260603 20:44:52.560308   187 loop_closing.cc:349] optimize finished, loops: 0
+[0;31mE20260603 20:44:52.561311   185 laser_mapping.cc:233] 检测到雷达断流，时长：0.899997
+[mI20260603 20:44:53.147960   185 laser_mapping.cc:288] delta norm: 0.00725314, 0.0353323
+I20260603 20:44:53.148764   185 laser_mapping.cc:300] [ mapping ]: In num: 15575 down 6383 Map grid num: 5203 effect num : 6009
+I20260603 20:44:53.285338   185 timer.h:53] func <Proc Lidar> timer: 725.469 ms
+I20260603 20:44:53.285692   185 laser_mapping.cc:382] get cloud at 1725172748.4, latest imu: 1725172749.4556
+[0;31mE20260603 20:44:53.287092   185 imu_processing.hpp:223] get abnormal dt: 0.830767
+[m[0;31mE20260603 20:44:53.287299   185 laser_mapping.cc:233] 检测到雷达断流，时长：0.800019
+[mI20260603 20:44:53.402184   185 laser_mapping.cc:288] delta norm: 0.331555, 4.10829
+I20260603 20:44:53.402673   185 laser_mapping.cc:300] [ mapping ]: In num: 5175 down 2536 Map grid num: 5226 effect num : 2182
+I20260603 20:44:53.436723   185 timer.h:53] func <Proc Lidar> timer: 151.022 ms
+I20260603 20:44:53.437288   185 laser_mapping.cc:382] get cloud at 1725172748.6, latest imu: 1725172749.6256
+[0;31mE20260603 20:44:53.440138   185 imu_processing.hpp:223] get abnormal dt: 0.150635
+[mI20260603 20:44:53.802627   185 laser_mapping.cc:288] delta norm: 0.13703, 2.00662
+I20260603 20:44:53.803514   185 laser_mapping.cc:300] [ mapping ]: In num: 10471 down 5219 Map grid num: 5296 effect num : 4215
+I20260603 20:44:53.866858   185 timer.h:53] func <Proc Lidar> timer: 429.562 ms
+I20260603 20:44:53.867590   185 laser_mapping.cc:382] get cloud at 1725172749, latest imu: 1725172750.1056
+I20260603 20:44:54.218566   185 laser_mapping.cc:288] delta norm: 0.00210717, 0.0442984
+I20260603 20:44:54.219265   185 laser_mapping.cc:300] [ mapping ]: In num: 10471 down 5219 Map grid num: 5297 effect num : 4850
+I20260603 20:44:54.308319   185 timer.h:53] func <Proc Lidar> timer: 440.722 ms
+I20260603 20:44:54.308869   185 laser_mapping.cc:382] get cloud at 1725172749.6, latest imu: 1725172750.5956
+[0;31mE20260603 20:44:54.311714   185 imu_processing.hpp:223] get abnormal dt: 0.755584
+[m[0;31mE20260603 20:44:54.312372   185 laser_mapping.cc:233] 检测到雷达断流，时长：0.600001
+[mI20260603 20:44:54.817605   185 laser_mapping.cc:288] delta norm: 0.149408, 0.230389
+I20260603 20:44:54.818331   185 laser_mapping.cc:300] [ mapping ]: In num: 10539 down 5278 Map grid num: 5303 effect num : 4955
+I20260603 20:44:54.911486   185 timer.h:53] func <Proc Lidar> timer: 602.612 ms
+I20260603 20:44:54.911809   185 laser_mapping.cc:382] get cloud at 1725172750.2, latest imu: 1725172751.2656
+[0;31mE20260603 20:44:54.913414   185 imu_processing.hpp:223] get abnormal dt: 0.405687
+[m[0;31mE20260603 20:44:54.913652   185 laser_mapping.cc:233] 检测到雷达断流，时长：0.599999
+[mI20260603 20:44:55.041952   185 laser_mapping.cc:288] delta norm: 0.0811926, 0.64519
+I20260603 20:44:55.042330   185 laser_mapping.cc:300] [ mapping ]: In num: 5202 down 2561 Map grid num: 5306 effect num : 2444
+I20260603 20:44:55.075317   185 timer.h:53] func <Proc Lidar> timer: 163.502 ms
+I20260603 20:44:55.075861   185 laser_mapping.cc:382] get cloud at 1725172750.4, latest imu: 1725172751.4456
+I20260603 20:44:55.143242   185 laser_mapping.cc:288] delta norm: 0.00450345, 0.079793
+I20260603 20:44:55.143641   185 laser_mapping.cc:300] [ mapping ]: In num: 5202 down 2561 Map grid num: 5306 effect num : 2444
+I20260603 20:44:55.148797   185 timer.h:53] func <Proc Lidar> timer: 72.9333 ms
+I20260603 20:44:55.149336   185 laser_mapping.cc:382] get cloud at 1725172750.5, latest imu: 1725172751.5256
+[0;31mE20260603 20:44:55.152168   185 imu_processing.hpp:223] get abnormal dt: 0.29565
+[mI20260603 20:44:55.594254   185 laser_mapping.cc:288] delta norm: 0.0103475, 0.435994
+I20260603 20:44:55.594985   185 laser_mapping.cc:300] [ mapping ]: In num: 10511 down 5320 Map grid num: 5308 effect num : 5044
+I20260603 20:44:55.683884   185 timer.h:53] func <Proc Lidar> timer: 534.538 ms
+I20260603 20:44:55.684630   185 laser_mapping.cc:382] get cloud at 1725172751, latest imu: 1725172752.1205
+[0;31mE20260603 20:44:55.688675   185 laser_mapping.cc:233] 检测到雷达断流，时长：0.500008
+[mI20260603 20:44:56.009172   185 laser_mapping.cc:288] delta norm: 0.000877739, 0.0161523
+I20260603 20:44:56.009859   185 laser_mapping.cc:300] [ mapping ]: In num: 10511 down 5320 Map grid num: 5308 effect num : 5066
+I20260603 20:44:56.108791   185 timer.h:53] func <Proc Lidar> timer: 424.156 ms
+I20260603 20:44:56.109341   185 laser_mapping.cc:382] get cloud at 1725172751.6, latest imu: 1725172752.5955
+[0;31mE20260603 20:44:56.112246   185 imu_processing.hpp:223] get abnormal dt: 0.665599
+[m[0;31mE20260603 20:44:56.112877   185 laser_mapping.cc:233] 检测到雷达断流，时长：0.599994
+[mI20260603 20:44:56.459618   185 laser_mapping.cc:288] delta norm: 0.0065823, 0.174099
+I20260603 20:44:56.460319   185 laser_mapping.cc:300] [ mapping ]: In num: 10492 down 5292 Map grid num: 5309 effect num : 5060
+I20260603 20:44:56.558902   185 timer.h:53] func <Proc Lidar> timer: 449.554 ms
+I20260603 20:44:56.559659   185 laser_mapping.cc:382] get cloud at 1725172752, latest imu: 1725172753.0955
+[0;31mE20260603 20:44:56.563697   185 imu_processing.hpp:223] get abnormal dt: 0.420634
+[mI20260603 20:44:57.121264   185 laser_mapping.cc:288] delta norm: 0.00623586, 0.16915
+I20260603 20:44:57.122054   185 laser_mapping.cc:300] [ mapping ]: In num: 15192 down 6117 Map grid num: 5311 effect num : 5868
+I20260603 20:44:57.250308   185 timer.h:53] func <Proc Lidar> timer: 690.64 ms
+I20260603 20:44:57.250885   185 laser_mapping.cc:382] get cloud at 1725172752.7999, latest imu: 1725172753.8605
+[0;31mE20260603 20:44:57.254021   185 imu_processing.hpp:223] get abnormal dt: 0.395577
+[m[0;31mE20260603 20:44:57.254628   185 laser_mapping.cc:233] 检测到雷达断流，时长：0.799915
+[mI20260603 20:44:57.624284   185 laser_mapping.cc:288] delta norm: 0.0093831, 0.433619
+I20260603 20:44:57.624939   185 laser_mapping.cc:300] [ mapping ]: In num: 9859 down 4860 Map grid num: 5313 effect num : 4669
+I20260603 20:44:57.716054   185 timer.h:53] func <Proc Lidar> timer: 465.162 ms
+I20260603 20:44:57.716589   185 laser_mapping.cc:382] get cloud at 1725172753.4, latest imu: 1725172754.3805
+[0;31mE20260603 20:44:57.719446   185 imu_processing.hpp:223] get abnormal dt: 0.195571
+[m[0;31mE20260603 20:44:57.720103   185 laser_mapping.cc:233] 检测到雷达断流，时长：0.600078
+[mI20260603 20:44:58.240103   185 laser_mapping.cc:288] delta norm: 0.0340259, 0.576303
+I20260603 20:44:58.240792   185 laser_mapping.cc:300] [ mapping ]: In num: 10499 down 5206 Map grid num: 5314 effect num : 5024
+I20260603 20:44:58.337913   185 timer.h:53] func <Proc Lidar> timer: 621.317 ms
+I20260603 20:44:58.338693   185 laser_mapping.cc:382] get cloud at 1725172754, latest imu: 1725172755.0704
+[0;31mE20260603 20:44:58.342862   185 imu_processing.hpp:223] get abnormal dt: 0.360583
+[m[0;31mE20260603 20:44:58.343768   185 laser_mapping.cc:233] 检测到雷达断流，时长：0.599996
+[mI20260603 20:44:59.055716   185 laser_mapping.cc:288] delta norm: 0.0397031, 0.446202
+I20260603 20:44:59.056531   185 laser_mapping.cc:300] [ mapping ]: In num: 15195 down 6170 Map grid num: 5314 effect num : 5946
+I20260603 20:44:59.188733   185 timer.h:53] func <Proc Lidar> timer: 850.035 ms
+I20260603 20:44:59.189083   185 laser_mapping.cc:382] get cloud at 1725172755, latest imu: 1725172756.0155
+[0;31mE20260603 20:44:59.190537   185 imu_processing.hpp:223] get abnormal dt: 0.180532
+[m[0;31mE20260603 20:44:59.190732   185 laser_mapping.cc:233] 检测到雷达断流，时长：1.00004
+[m

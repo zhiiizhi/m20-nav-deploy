@@ -1,0 +1,208 @@
+cxz@cxz-Super-Server:~/sdk_deploy$ cd ~/sdk_deploy && source install/setup.bash
+ros2 launch m20_sdk_deploy m20_nav2.launch.py
+[INFO] [launch]: All log files can be found below /home/cxz/.ros/log/2026-06-09-13-03-09-209523-cxz-Super-Server-649811
+[INFO] [launch]: Default logging verbosity is set to INFO
+[INFO] [lightning_tf_bridge.py-1]: process started with pid [649861]
+[INFO] [pcd_to_costmap.py-2]: process started with pid [649863]
+[INFO] [controller_server-3]: process started with pid [649865]
+[INFO] [smoother_server-4]: process started with pid [649867]
+[INFO] [planner_server-5]: process started with pid [649869]
+[INFO] [behavior_server-6]: process started with pid [649871]
+[INFO] [bt_navigator-7]: process started with pid [649873]
+[INFO] [waypoint_follower-8]: process started with pid [649875]
+[INFO] [velocity_smoother-9]: process started with pid [649877]
+[INFO] [lifecycle_manager-10]: process started with pid [649879]
+[velocity_smoother-9] 2026-06-09 13:03:09.372 [RTPS_TRANSPORT_SHM Error] Failed init_port fastrtps_port7415: open_and_lock_file failed -> Function open_port_internal
+[controller_server-3] 2026-06-09 13:03:09.372 [RTPS_TRANSPORT_SHM Error] Failed init_port fastrtps_port7415: open_and_lock_file failed -> Function open_port_internal
+[waypoint_follower-8] 2026-06-09 13:03:09.373 [RTPS_TRANSPORT_SHM Error] Failed init_port fastrtps_port7415: open_and_lock_file failed -> Function open_port_internal
+[behavior_server-6] 2026-06-09 13:03:09.373 [RTPS_TRANSPORT_SHM Error] Failed init_port fastrtps_port7415: open_and_lock_file failed -> Function open_port_internal
+[planner_server-5] 2026-06-09 13:03:09.374 [RTPS_TRANSPORT_SHM Error] Failed init_port fastrtps_port7415: open_and_lock_file failed -> Function open_port_internal
+[lifecycle_manager-10] 2026-06-09 13:03:09.375 [RTPS_TRANSPORT_SHM Error] Failed init_port fastrtps_port7415: open_and_lock_file failed -> Function open_port_internal
+[smoother_server-4] 2026-06-09 13:03:09.375 [RTPS_TRANSPORT_SHM Error] Failed init_port fastrtps_port7415: open_and_lock_file failed -> Function open_port_internal
+[bt_navigator-7] 2026-06-09 13:03:09.377 [RTPS_TRANSPORT_SHM Error] Failed init_port fastrtps_port7415: open_and_lock_file failed -> Function open_port_internal
+[lifecycle_manager-10] [INFO] [1780981389.386733766] [lifecycle_manager_navigation]: Creating
+[controller_server-3] [INFO] [1780981389.387318539] [controller_server]: 
+[controller_server-3] 	controller_server lifecycle node launched. 
+[controller_server-3] 	Waiting on external lifecycle transitions to activate
+[controller_server-3] 	See https://design.ros2.org/articles/node_lifecycle.html for more information.
+[velocity_smoother-9] [INFO] [1780981389.387338951] [velocity_smoother]: 
+[velocity_smoother-9] 	velocity_smoother lifecycle node launched. 
+[velocity_smoother-9] 	Waiting on external lifecycle transitions to activate
+[velocity_smoother-9] 	See https://design.ros2.org/articles/node_lifecycle.html for more information.
+[waypoint_follower-8] [INFO] [1780981389.387886250] [waypoint_follower]: 
+[waypoint_follower-8] 	waypoint_follower lifecycle node launched. 
+[waypoint_follower-8] 	Waiting on external lifecycle transitions to activate
+[waypoint_follower-8] 	See https://design.ros2.org/articles/node_lifecycle.html for more information.
+[behavior_server-6] [INFO] [1780981389.388703712] [behavior_server]: 
+[behavior_server-6] 	behavior_server lifecycle node launched. 
+[behavior_server-6] 	Waiting on external lifecycle transitions to activate
+[behavior_server-6] 	See https://design.ros2.org/articles/node_lifecycle.html for more information.
+[waypoint_follower-8] [INFO] [1780981389.388920944] [waypoint_follower]: Creating
+[lifecycle_manager-10] [INFO] [1780981389.389010126] [lifecycle_manager_navigation]: Creating and initializing lifecycle service clients
+[planner_server-5] [INFO] [1780981389.390845529] [planner_server]: 
+[planner_server-5] 	planner_server lifecycle node launched. 
+[planner_server-5] 	Waiting on external lifecycle transitions to activate
+[planner_server-5] 	See https://design.ros2.org/articles/node_lifecycle.html for more information.
+[planner_server-5] [INFO] [1780981389.392717623] [planner_server]: Creating
+[bt_navigator-7] [INFO] [1780981389.392805545] [bt_navigator]: 
+[bt_navigator-7] 	bt_navigator lifecycle node launched. 
+[bt_navigator-7] 	Waiting on external lifecycle transitions to activate
+[bt_navigator-7] 	See https://design.ros2.org/articles/node_lifecycle.html for more information.
+[bt_navigator-7] [INFO] [1780981389.392916464] [bt_navigator]: Creating
+[smoother_server-4] [INFO] [1780981389.394631740] [smoother_server]: 
+[smoother_server-4] 	smoother_server lifecycle node launched. 
+[smoother_server-4] 	Waiting on external lifecycle transitions to activate
+[smoother_server-4] 	See https://design.ros2.org/articles/node_lifecycle.html for more information.
+[controller_server-3] [INFO] [1780981389.395428452] [controller_server]: Creating controller server
+[smoother_server-4] [INFO] [1780981389.395980238] [smoother_server]: Creating smoother server
+[planner_server-5] [INFO] [1780981389.400070758] [global_costmap.global_costmap]: 
+[planner_server-5] 	global_costmap lifecycle node launched. 
+[planner_server-5] 	Waiting on external lifecycle transitions to activate
+[planner_server-5] 	See https://design.ros2.org/articles/node_lifecycle.html for more information.
+[planner_server-5] [INFO] [1780981389.400705256] [global_costmap.global_costmap]: Creating Costmap
+[controller_server-3] [INFO] [1780981389.401880453] [local_costmap.local_costmap]: 
+[controller_server-3] 	local_costmap lifecycle node launched. 
+[controller_server-3] 	Waiting on external lifecycle transitions to activate
+[controller_server-3] 	See https://design.ros2.org/articles/node_lifecycle.html for more information.
+[controller_server-3] [INFO] [1780981389.402261321] [local_costmap.local_costmap]: Creating Costmap
+[velocity_smoother-9] sequence size exceeds remaining buffer
+[planner_server-5] sequence size exceeds remaining buffer
+[lifecycle_manager-10] sequence size exceeds remaining buffer
+[smoother_server-4] sequence size exceeds remaining buffer
+[waypoint_follower-8] sequence size exceeds remaining buffer
+[bt_navigator-7] sequence size exceeds remaining buffer
+[behavior_server-6] sequence size exceeds remaining buffer
+[controller_server-3] sequence size exceeds remaining buffer
+[lightning_tf_bridge.py-1] 2026-06-09 13:03:09.600 [RTPS_TRANSPORT_SHM Error] Failed init_port fastrtps_port7415: open_and_lock_file failed -> Function open_port_internal
+[lifecycle_manager-10] [INFO] [1780981389.632480357] [lifecycle_manager_navigation]: Starting managed nodes bringup...
+[lifecycle_manager-10] [INFO] [1780981389.632521042] [lifecycle_manager_navigation]: Configuring controller_server
+[controller_server-3] [INFO] [1780981389.632745130] [controller_server]: Configuring controller interface
+[controller_server-3] [INFO] [1780981389.632891293] [controller_server]: getting goal checker plugins..
+[controller_server-3] [INFO] [1780981389.632965913] [controller_server]: Controller frequency set to 20.0000Hz
+[controller_server-3] [INFO] [1780981389.632990303] [local_costmap.local_costmap]: Configuring
+[controller_server-3] [INFO] [1780981389.636336822] [local_costmap.local_costmap]: Using plugin "obstacle_layer"
+[controller_server-3] [INFO] [1780981389.638796009] [local_costmap.local_costmap]: Subscribed to Topics: scan
+[controller_server-3] [INFO] [1780981389.640879660] [local_costmap.local_costmap]: Initialized plugin "obstacle_layer"
+[controller_server-3] [INFO] [1780981389.640899545] [local_costmap.local_costmap]: Using plugin "voxel_layer"
+[controller_server-3] [INFO] [1780981389.641242139] [local_costmap.local_costmap]: Subscribed to Topics: pointcloud
+[controller_server-3] [INFO] [1780981389.644535246] [local_costmap.local_costmap]: Initialized plugin "voxel_layer"
+[controller_server-3] [INFO] [1780981389.644553939] [local_costmap.local_costmap]: Using plugin "inflation_layer"
+[controller_server-3] [INFO] [1780981389.644978191] [local_costmap.local_costmap]: Initialized plugin "inflation_layer"
+[lightning_tf_bridge.py-1] [INFO] [1780981389.645080557] [lightning_tf_bridge]: LightningTFBridge: /lightning/odom -> TF odom->base_link + static map->odom
+[controller_server-3] [INFO] [1780981389.649553497] [controller_server]: Created progress_checker : progress_checker of type nav2_controller::SimpleProgressChecker
+[controller_server-3] [INFO] [1780981389.650010229] [controller_server]: Created goal checker : general_goal_checker of type nav2_controller::SimpleGoalChecker
+[controller_server-3] [INFO] [1780981389.650195753] [controller_server]: Controller Server has general_goal_checker  goal checkers available.
+[controller_server-3] [INFO] [1780981389.652778103] [controller_server]: Created controller : FollowPath of type dwb_core::DWBLocalPlanner
+[controller_server-3] [INFO] [1780981389.653364725] [controller_server]: Setting transform_tolerance to 0.200000
+[controller_server-3] [INFO] [1780981389.658738814] [controller_server]: Using critic "RotateToGoal" (dwb_critics::RotateToGoalCritic)
+[controller_server-3] [INFO] [1780981389.658950489] [controller_server]: Critic plugin initialized
+[controller_server-3] [INFO] [1780981389.658996937] [controller_server]: Using critic "Oscillation" (dwb_critics::OscillationCritic)
+[controller_server-3] [INFO] [1780981389.659156617] [controller_server]: Critic plugin initialized
+[controller_server-3] [INFO] [1780981389.659195665] [controller_server]: Using critic "BaseObstacle" (dwb_critics::BaseObstacleCritic)
+[controller_server-3] [INFO] [1780981389.659262378] [controller_server]: Critic plugin initialized
+[controller_server-3] [INFO] [1780981389.659298651] [controller_server]: Using critic "GoalAlign" (dwb_critics::GoalAlignCritic)
+[controller_server-3] [INFO] [1780981389.659426314] [controller_server]: Critic plugin initialized
+[controller_server-3] [INFO] [1780981389.659471861] [controller_server]: Using critic "PathAlign" (dwb_critics::PathAlignCritic)
+[controller_server-3] [INFO] [1780981389.659578786] [controller_server]: Critic plugin initialized
+[controller_server-3] [INFO] [1780981389.659614010] [controller_server]: Using critic "PathDist" (dwb_critics::PathDistCritic)
+[controller_server-3] [INFO] [1780981389.659693957] [controller_server]: Critic plugin initialized
+[controller_server-3] [INFO] [1780981389.659732680] [controller_server]: Using critic "GoalDist" (dwb_critics::GoalDistCritic)
+[controller_server-3] [INFO] [1780981389.659809588] [controller_server]: Critic plugin initialized
+[controller_server-3] [INFO] [1780981389.659820759] [controller_server]: Controller Server has FollowPath  controllers available.
+[lifecycle_manager-10] [INFO] [1780981389.662854590] [lifecycle_manager_navigation]: Configuring smoother_server
+[smoother_server-4] [INFO] [1780981389.662992762] [smoother_server]: Configuring smoother server
+[smoother_server-4] [INFO] [1780981389.667849144] [smoother_server]: Created smoother : simple_smoother of type nav2_smoother::SimpleSmoother
+[smoother_server-4] [INFO] [1780981389.668064349] [smoother_server]: Smoother Server has simple_smoother  smoothers available.
+[lifecycle_manager-10] [INFO] [1780981389.670602117] [lifecycle_manager_navigation]: Configuring planner_server
+[planner_server-5] [INFO] [1780981389.670771955] [planner_server]: Configuring
+[planner_server-5] [INFO] [1780981389.670806752] [global_costmap.global_costmap]: Configuring
+[planner_server-5] [INFO] [1780981389.674074556] [global_costmap.global_costmap]: Using plugin "static_layer"
+[planner_server-5] [INFO] [1780981389.676115155] [global_costmap.global_costmap]: Subscribing to the map topic (/map) with transient local durability
+[planner_server-5] [INFO] [1780981389.677059343] [global_costmap.global_costmap]: Initialized plugin "static_layer"
+[planner_server-5] [INFO] [1780981389.677091198] [global_costmap.global_costmap]: Using plugin "obstacle_layer"
+[planner_server-5] [INFO] [1780981389.677347706] [global_costmap.global_costmap]: Subscribed to Topics: scan
+[planner_server-5] [INFO] [1780981389.679541325] [global_costmap.global_costmap]: Initialized plugin "obstacle_layer"
+[planner_server-5] [INFO] [1780981389.679558006] [global_costmap.global_costmap]: Using plugin "voxel_layer"
+[planner_server-5] [INFO] [1780981389.680023560] [global_costmap.global_costmap]: Subscribed to Topics: pointcloud
+[planner_server-5] [INFO] [1780981389.683558735] [global_costmap.global_costmap]: Initialized plugin "voxel_layer"
+[planner_server-5] [INFO] [1780981389.683578851] [global_costmap.global_costmap]: Using plugin "inflation_layer"
+[planner_server-5] [INFO] [1780981389.684066638] [global_costmap.global_costmap]: Initialized plugin "inflation_layer"
+[planner_server-5] [INFO] [1780981389.689078959] [planner_server]: Created global planner plugin GridBased of type nav2_navfn_planner/NavfnPlanner
+[planner_server-5] [INFO] [1780981389.689118714] [planner_server]: Configuring plugin GridBased of type NavfnPlanner
+[planner_server-5] [INFO] [1780981389.689663271] [planner_server]: Planner Server has GridBased  planners available.
+[lifecycle_manager-10] [INFO] [1780981389.697280355] [lifecycle_manager_navigation]: Configuring behavior_server
+[behavior_server-6] [INFO] [1780981389.697449174] [behavior_server]: Configuring
+[behavior_server-6] [INFO] [1780981389.702947136] [behavior_server]: Creating behavior plugin spin of type nav2_behaviors/Spin
+[behavior_server-6] [INFO] [1780981389.703530787] [behavior_server]: Configuring spin
+[behavior_server-6] [INFO] [1780981389.707617769] [behavior_server]: Creating behavior plugin backup of type nav2_behaviors/BackUp
+[behavior_server-6] [INFO] [1780981389.708198703] [behavior_server]: Configuring backup
+[behavior_server-6] [INFO] [1780981389.710911386] [behavior_server]: Creating behavior plugin drive_on_heading of type nav2_behaviors/DriveOnHeading
+[behavior_server-6] [INFO] [1780981389.711566789] [behavior_server]: Configuring drive_on_heading
+[behavior_server-6] [INFO] [1780981389.714257050] [behavior_server]: Creating behavior plugin assisted_teleop of type nav2_behaviors/AssistedTeleop
+[behavior_server-6] [INFO] [1780981389.715552272] [behavior_server]: Configuring assisted_teleop
+[behavior_server-6] [INFO] [1780981389.719092513] [behavior_server]: Creating behavior plugin wait of type nav2_behaviors/Wait
+[behavior_server-6] [INFO] [1780981389.719628537] [behavior_server]: Configuring wait
+[lifecycle_manager-10] [INFO] [1780981389.723031952] [lifecycle_manager_navigation]: Configuring bt_navigator
+[bt_navigator-7] [INFO] [1780981389.723213981] [bt_navigator]: Configuring
+[lifecycle_manager-10] [INFO] [1780981389.768136776] [lifecycle_manager_navigation]: Configuring waypoint_follower
+[waypoint_follower-8] [INFO] [1780981389.768257337] [waypoint_follower]: Configuring
+[waypoint_follower-8] [INFO] [1780981389.772720722] [waypoint_follower]: Created waypoint_task_executor : wait_at_waypoint of type nav2_waypoint_follower::WaitAtWaypoint
+[lifecycle_manager-10] [INFO] [1780981389.773021072] [lifecycle_manager_navigation]: Configuring velocity_smoother
+[velocity_smoother-9] [INFO] [1780981389.773161469] [velocity_smoother]: Configuring velocity smoother
+[lifecycle_manager-10] [INFO] [1780981389.775328790] [lifecycle_manager_navigation]: Activating controller_server
+[controller_server-3] [INFO] [1780981389.775409827] [controller_server]: Activating
+[controller_server-3] [INFO] [1780981389.775443780] [local_costmap.local_costmap]: Activating
+[controller_server-3] [INFO] [1780981389.775463818] [local_costmap.local_costmap]: Checking transform
+[controller_server-3] [INFO] [1780981389.775484872] [local_costmap.local_costmap]: Timed out waiting for transform from base_link to odom to become available, tf error: Invalid frame ID "odom" passed to canTransform argument target_frame - frame does not exist
+[lightning_tf_bridge.py-1] sequence size exceeds remaining buffer
+[controller_server-3] [INFO] [1780981390.275586378] [local_costmap.local_costmap]: Timed out waiting for transform from base_link to odom to become available, tf error: Invalid frame ID "odom" passed to canTransform argument target_frame - frame does not exist
+[controller_server-3] [INFO] [1780981390.775647093] [local_costmap.local_costmap]: start
+[pcd_to_costmap.py-2] 2026-06-09 13:03:10.855 [RTPS_TRANSPORT_SHM Error] Failed init_port fastrtps_port7415: open_and_lock_file failed -> Function open_port_internal
+[controller_server-3] [INFO] [1780981390.976813022] [controller_server]: Creating bond (controller_server) to lifecycle manager.
+[pcd_to_costmap.py-2] [INFO] [1780981390.987534994] [pcd_to_costmap]: Loading map from: /home/cxz/sdk_deploy/data/m20_sim_map/global.pcd
+[pcd_to_costmap.py-2] [INFO] [1780981391.005231598] [pcd_to_costmap]: Loaded 202445 points from PCD
+[pcd_to_costmap.py-2] [INFO] [1780981391.007246147] [pcd_to_costmap]: Map bounds: x=[-50.3, 89.8], y=[-23.8, 115.8], size=2801x2791 cells, 42440 obstacle points
+[pcd_to_costmap.py-2] sequence size exceeds remaining buffer
+[lifecycle_manager-10] [INFO] [1780981391.080441435] [lifecycle_manager_navigation]: Server controller_server connected with bond.
+[lifecycle_manager-10] [INFO] [1780981391.080521165] [lifecycle_manager_navigation]: Activating smoother_server
+[smoother_server-4] [INFO] [1780981391.080845551] [smoother_server]: Activating
+[smoother_server-4] [INFO] [1780981391.080887302] [smoother_server]: Creating bond (smoother_server) to lifecycle manager.
+[lifecycle_manager-10] [INFO] [1780981391.183952433] [lifecycle_manager_navigation]: Server smoother_server connected with bond.
+[lifecycle_manager-10] [INFO] [1780981391.184000032] [lifecycle_manager_navigation]: Activating planner_server
+[planner_server-5] [INFO] [1780981391.184220914] [planner_server]: Activating
+[planner_server-5] [INFO] [1780981391.184257752] [global_costmap.global_costmap]: Activating
+[planner_server-5] [INFO] [1780981391.184265651] [global_costmap.global_costmap]: Checking transform
+[planner_server-5] [INFO] [1780981391.184357152] [global_costmap.global_costmap]: start
+[planner_server-5] [INFO] [1780981392.235428242] [planner_server]: Activating plugin GridBased of type NavfnPlanner
+[planner_server-5] [INFO] [1780981392.236460804] [planner_server]: Creating bond (planner_server) to lifecycle manager.
+[lifecycle_manager-10] [INFO] [1780981392.338950742] [lifecycle_manager_navigation]: Server planner_server connected with bond.
+[lifecycle_manager-10] [INFO] [1780981392.338987825] [lifecycle_manager_navigation]: Activating behavior_server
+[behavior_server-6] [INFO] [1780981392.339188963] [behavior_server]: Activating
+[behavior_server-6] [INFO] [1780981392.339206180] [behavior_server]: Activating spin
+[behavior_server-6] [INFO] [1780981392.339213676] [behavior_server]: Activating backup
+[behavior_server-6] [INFO] [1780981392.339218768] [behavior_server]: Activating drive_on_heading
+[behavior_server-6] [INFO] [1780981392.339223888] [behavior_server]: Activating assisted_teleop
+[behavior_server-6] [INFO] [1780981392.339229000] [behavior_server]: Activating wait
+[behavior_server-6] [INFO] [1780981392.339236398] [behavior_server]: Creating bond (behavior_server) to lifecycle manager.
+[lifecycle_manager-10] [INFO] [1780981392.441461775] [lifecycle_manager_navigation]: Server behavior_server connected with bond.
+[lifecycle_manager-10] [INFO] [1780981392.441509426] [lifecycle_manager_navigation]: Activating bt_navigator
+[bt_navigator-7] [INFO] [1780981392.441732663] [bt_navigator]: Activating
+[bt_navigator-7] [INFO] [1780981392.470309488] [bt_navigator]: Creating bond (bt_navigator) to lifecycle manager.
+[pcd_to_costmap.py-2] [INFO] [1780981392.478052480] [pcd_to_costmap]: Published occupancy grid: 2801x2791 cells, resolution=0.05m, origin=(-50.3, -23.8)
+[planner_server-5] [INFO] [1780981392.504393280] [global_costmap.global_costmap]: StaticLayer: Resizing costmap to 2801 X 2791 at 0.050000 m/pix
+[lifecycle_manager-10] [INFO] [1780981392.573227956] [lifecycle_manager_navigation]: Server bt_navigator connected with bond.
+[lifecycle_manager-10] [INFO] [1780981392.573291527] [lifecycle_manager_navigation]: Activating waypoint_follower
+[waypoint_follower-8] [INFO] [1780981392.573597889] [waypoint_follower]: Activating
+[waypoint_follower-8] [INFO] [1780981392.573641976] [waypoint_follower]: Creating bond (waypoint_follower) to lifecycle manager.
+[lifecycle_manager-10] [INFO] [1780981392.676879216] [lifecycle_manager_navigation]: Server waypoint_follower connected with bond.
+[lifecycle_manager-10] [INFO] [1780981392.676919605] [lifecycle_manager_navigation]: Activating velocity_smoother
+[velocity_smoother-9] [INFO] [1780981392.677170292] [velocity_smoother]: Activating
+[velocity_smoother-9] [INFO] [1780981392.677227741] [velocity_smoother]: Creating bond (velocity_smoother) to lifecycle manager.
+[lifecycle_manager-10] [INFO] [1780981392.780166968] [lifecycle_manager_navigation]: Server velocity_smoother connected with bond.
+[lifecycle_manager-10] [INFO] [1780981392.780206694] [lifecycle_manager_navigation]: Managed nodes are active
+[lifecycle_manager-10] [INFO] [1780981392.780218353] [lifecycle_manager_navigation]: Creating bond timer...
+[bt_navigator-7] [INFO] [1780981425.450537640] [bt_navigator]: Begin navigating from current location (0.49, 0.02) to (0.80, 19.28)
+[controller_server-3] [INFO] [1780981425.521829450] [controller_server]: Received a goal, begin computing control effort.
+[controller_server-3] [WARN] [1780981425.521877571] [controller_server]: No goal checker was specified in parameter 'current_goal_checker'. Server will use only plugin loaded general_goal_checker . This warning will appear once.
+[controller_server-3] [INFO] [1780981426.572470647] [controller_server]: Passing new path to controller.
+[controller_server-3] [INFO] [1780981427.622137709] [controller_server]: Passing new path to controller.

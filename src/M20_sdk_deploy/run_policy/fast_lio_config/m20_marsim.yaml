@@ -1,0 +1,27 @@
+# M20 Robot Dog Config for RKO-LIO / FAST-LIO2 (MARSIM type)
+# LiDAR & IMU are both at base_link (merged lidar_link == base_link)
+base_frame: base_link
+imu_topic: /imu
+imu_frame: base_link
+lidar_topic: /lidar/merged/pointcloud
+lidar_frame: lidar_link
+odom_frame: odom
+odom_topic: /rko_lio/odometry
+
+# No extrinsic needed - LiDAR and IMU share the same frame
+# (merged lidar_link coincides with base_link)
+publish_local_map: true
+map_topic: /rko_lio/local_map
+publish_deskewed_scan: false
+
+# LIO parameters for simulated LiDAR
+deskew: false            # Simulated point cloud has no motion distortion
+voxel_size: 1.0
+max_points_per_voxel: 20
+max_range: 50.0
+min_range: 0.2
+max_correspondance_distance: 1.0
+convergence_criterion: 0.00001
+max_iterations: 100
+double_downsample: true
+initialization_phase: true   # Start from rest to init IMU bias

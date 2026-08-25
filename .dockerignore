@@ -1,0 +1,12 @@
+build/
+install/
+log/
+.git/
+.vscode/
+*.md
+MUJOCO_LOG.TXT
+img/
+data/
+docker/*.tar
+**/thirdparty/glog/build/
+**/thirdparty/Pangolin/build/

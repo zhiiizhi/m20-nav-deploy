@@ -1,0 +1,26 @@
+# 编译产物
+build/
+install/
+log/
+# 数据（地图、rosbag——太大）
+data/
+m20_map_bag/
+m20_map_bag_channel/
+*.db3
+# IDE
+.vscode/
+*.code-workspace
+# Python
+__pycache__/
+*.pyc
+# 日志
+*.log
+*.txt.bak
+# 临时文件
+tmp/
+.codex
+.qwen/
+# 大文件类型
+*.onnx
+*.so
+*.a

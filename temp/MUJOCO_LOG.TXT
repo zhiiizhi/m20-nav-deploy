@@ -1,0 +1,18 @@
+Thu May 21 17:02:07 2026
+ERROR: mj_copyDataVisual: attempting to copy mjData while stack is in use
+
+Thu May 21 17:02:42 2026
+ERROR: mj_copyDataVisual: attempting to copy mjData while stack is in use
+
+Thu May 21 17:04:39 2026
+ERROR: mj_copyDataVisual: attempting to copy mjData while stack is in use
+
+Wed May 27 15:48:26 2026
+WARNING: Nan, Inf or huge value in CTRL at ACTUATOR 0. The simulation is unstable. Time = 0.0000.
+
+Mon Jun  1 20:57:44 2026
+WARNING: Nan, Inf or huge value in CTRL at ACTUATOR 0. The simulation is unstable. Time = 0.0000.
+
+Tue Jun  2 10:37:35 2026
+WARNING: Nan, Inf or huge value in CTRL at ACTUATOR 0. The simulation is unstable. Time = 37.4010.
+

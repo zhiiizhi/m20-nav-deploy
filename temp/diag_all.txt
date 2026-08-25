@@ -1,0 +1,16 @@
+=== diag_nodes === cat /tmp/diag_nodes.txt
+
+=== diag_topics === cat /tmp/diag_topics.txt
+
+=== diag_tf_info === cat /tmp/diag_tf_info.txt
+
+=== diag_tf_tree === cat /tmp/diag_tf_tree.txt
+
+=== diag_tf_raw === cat /tmp/diag_tf_raw.txt
+
+=== diag_map_base === cat /tmp/diag_map_base.txt
+
+=== diag_map_odom === cat /tmp/diag_map_odom.txt
+
+=== diag_odom_base === cat /tmp/diag_odom_base.txt
+

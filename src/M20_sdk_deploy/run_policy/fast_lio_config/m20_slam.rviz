@@ -1,0 +1,41 @@
+Panels:
+  - Class: rviz_common/Displays
+    Name: Displays
+  - Class: rviz_common/Views
+    Name: Views
+Visualization Manager:
+  Global Options:
+    Fixed Frame: odom
+    Frame Rate: 30
+  Displays:
+    - Class: rviz_default_plugins/Grid
+      Name: Grid
+      Value: true
+    - Class: rviz_default_plugins/TF
+      Name: TF
+      Enabled: true
+    - Class: rviz_default_plugins/PointCloud2
+      Name: Local Map
+      Topic: /rko_lio/local_map
+      Style: Points
+      Size (Pixels): 3
+      Value: true
+    - Class: rviz_default_plugins/PointCloud2
+      Name: Merged LiDAR
+      Topic: /lidar/merged/pointcloud
+      Style: Points
+      Size (Pixels): 2
+      Value: true
+    - Class: rviz_default_plugins/Path
+      Name: Trajectory
+      Topic: /rko_lio/odometry
+      Value: true
+    - Class: rviz_default_plugins/Axes
+      Name: Odom Axes
+      Topic: /rko_lio/odometry
+      Value: true
+  Views:
+    Current:
+      Class: rviz_default_plugins/Orbit
+      Target Frame: odom
+      Distance: 5

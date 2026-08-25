@@ -1,0 +1,139 @@
+Panels:
+  - Class: rviz_common/Displays
+    Help Height: 78
+    Name: Displays
+    Property Tree Widget:
+      Expanded:
+        - /Global Options1
+        - /TF1
+      Tree Height: 600
+  - Class: rviz_common/Selection
+    Name: Selection
+  - Class: rviz_common/Tool Properties
+    Expanded:
+      - /2D Goal Pose1
+    Name: Tool Properties
+    Splitter Ratio: 0.5
+  - Class: rviz_common/Views
+    Expanded:
+      - /Current View1
+    Name: Views
+    Splitter Ratio: 0.5
+Visualization Manager:
+  Class: ""
+  Displays:
+    # ===== 全局选项：固定坐标系 = map =====
+    - Class: rviz_default_plugins/Grid
+      Name: Grid
+      Enabled: true
+      Cell Size: 1
+      Plane Cell Count: 30
+      Color: 160; 160; 164
+
+    # ===== TF：map->odom->base_link 坐标链（看定位）=====
+    - Class: rviz_default_plugins/TF
+      Name: TF
+      Enabled: true
+      Show Axes: true
+      Show Names: true
+      Frame Timeout: 15
+
+    # ===== 全局静态地图（pcd_to_costmap 发的 OccupancyGrid）=====
+    - Class: rviz_default_plugins/Map
+      Name: GlobalMap
+      Enabled: true
+      Topic:
+        Value: /map
+        Depth: 1
+      Alpha: 0.8
+      Color Scheme: map
+
+    # ===== Nav2 全局代价图（含膨胀层）=====
+    - Class: rviz_default_plugins/Map
+      Name: GlobalCostmap
+      Enabled: true
+      Topic:
+        Value: /global_costmap/costmap
+        Depth: 1
+      Alpha: 0.4
+      Color Scheme: costmap
+
+    # ===== Nav2 局部代价图（实时避障）=====
+    - Class: rviz_default_plugins/Map
+      Name: LocalCostmap
+      Enabled: true
+      Topic:
+        Value: /local_costmap/costmap
+        Depth: 1
+      Alpha: 0.5
+      Color Scheme: costmap
+
+    # ===== 定位轨迹（走过的路线，绿色）=====
+    - Class: rviz_default_plugins/Path
+      Name: LocPath
+      Enabled: true
+      Topic:
+        Value: /lightning/path
+        Depth: 5
+      Color: 50; 200; 50
+      Line Style: Lines
+      Line Width: 0.04
+
+    # ===== Nav2 全局规划路径（发目标点后出现，蓝色）=====
+    - Class: rviz_default_plugins/Path
+      Name: NavPlan
+      Enabled: true
+      Topic:
+        Value: /plan
+        Depth: 5
+      Color: 50; 150; 255
+      Line Style: Lines
+      Line Width: 0.05
+
+    # ===== Nav2 局部规划路径（黄色）=====
+    - Class: rviz_default_plugins/Path
+      Name: LocalPlan
+      Enabled: true
+      Topic:
+        Value: /local_plan
+        Depth: 5
+      Color: 255; 200; 0
+      Line Style: Lines
+      Line Width: 0.03
+
+    # ===== 机器人脚印（footprint，看实际占地范围）=====
+    - Class: rviz_default_plugins/Polygon
+      Name: Footprint
+      Enabled: true
+      Topic:
+        Value: /local_costmap/published_footprint
+        Depth: 5
+      Color: 200; 50; 200
+
+  Global Options:
+    Background Color: 48; 48; 48
+    Fixed Frame: map
+    Frame Rate: 30
+  Tools:
+    - Class: rviz_default_plugins/MoveCamera
+    # 2D Goal Pose：在地图上点击发送导航目标（需要 nav2 在运行）
+    - Class: rviz_default_plugins/SetGoal
+      Topic:
+        Value: /goal_pose
+  Value: true
+  Views:
+    Current:
+      Class: rviz_default_plugins/TopDownOrtho
+      Name: Current View
+      Target Frame: <Fixed Frame>
+      X: 0
+      Y: 0
+      Scale: 80
+      Angle: 0
+Window Geometry:
+  Displays:
+    collapsed: false
+  Height: 900
+  Width: 1400
+  X: 50
+  Y: 50
